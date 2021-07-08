@@ -22,8 +22,21 @@
   justify-content: center;
 }
 
-.container--question {
-  justify-content: center;
+.container--text {
+  font-size:xx-large;
+  color: #475be9;
+}
+
+.container--small {
+  font-size:small;
+  color: #92989b;
+  width: 100%;
+}
+
+.container--header {
+  font-size:small;
+  color: #475be9;
+  background-color: rgba(136, 184, 144, 0.767);
 }
 
 .container--question .paragraph {

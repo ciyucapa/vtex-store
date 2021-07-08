@@ -1,37 +1,48 @@
 {
   "store.home": {
     "blocks": [
-      "list-context.image-list#demo",
-      /* You can make references to blocks defined in other files.
-       * For example, `flex-layout.row#deals` is defined in the `deals.json` file. */
+      "list-context.image-list#sugo",
+    //  "flex-layout.row#home",
+      //"search-result-layout.customQuery#prueba",
       "__fold__.experimentalLazyAssets",
-      "flex-layout.row#deals",
-      "rich-text#shelf-title",
+      //"flex-layout.row#deals",
+      "rich-text#sugo",
+      "list-context.image-list#ahorra-sugo",
+      "rich-text#destacados",
       "flex-layout.row#shelf",
-      "info-card#home",
-      "rich-text#question",
-      "rich-text#link",
-      "newsletter"
+      "rich-text#sugo",
+      "rich-text#oportunidad"
     ]
   },
-
-  "list-context.image-list#demo": {
-    "children": ["slider-layout#demo-images"],
+  "list-context.image-list#sugo": {
+    "children": ["slider-layout#home-sugo"],
     "props": {
       "height": 720,
       "images": [
         {
-          "image": "https://storecomponents.vteximg.com.br/arquivos/banner-principal.png",
-          "mobileImage": "https://storecomponents.vteximg.com.br/arquivos/banner-principal-mobile.jpg"
+          "image": "https://sugoco.vtexassets.com/assets/vtex.file-manager-graphql/images/ee5ada79-b077-47a3-961c-5e4f95f71cad___d52b59e1319d44b1ee62054c97990808.jpg",
+          "mobileImage": "https://sugoco.vtexassets.com/assets/vtex.file-manager-graphql/images/e204c951-dfa2-43f6-ada1-df52968a2fcf___270555ec39f43f6ad8e4152dc5c43c9e.jpg"
         },
         {
-          "image": "https://storecomponents.vteximg.com.br/arquivos/banner.jpg",
-          "mobileImage": "https://storecomponents.vteximg.com.br/arquivos/banner-principal-mobile.jpg"
+          "image": "https://sugoco.vtexassets.com/assets/vtex.file-manager-graphql/images/d4d49cfc-102f-413a-ab9e-12c346caed5e___a13caa04d330fcdbcdcc9a92f933905e.jpg",
+          "mobileImage": "https://sugoco.vtexassets.com/assets/vtex.file-manager-graphql/images/b6165d55-6914-46f2-ae4e-7e4bff7e1753___c3bce5315447dfa66e75b3f67619f491.jpg"
+        },
+        {
+          "image": "https://sugoco.vtexassets.com/assets/vtex.file-manager-graphql/images/3db8a9fa-7d02-4132-be68-52aa81f68747___fa996a289cd9f6207a1bca9cadb169a8.jpg",
+          "mobileImage": "https://sugoco.vtexassets.com/assets/vtex.file-manager-graphql/images/2d9bf1ae-ca6d-4b0a-9f48-60c63b7026e2___24981128803c34bb431c0bd600efe98b.jpg"
+        },
+        {
+          "image": "https://sugoco.vtexassets.com/assets/vtex.file-manager-graphql/images/9e5134dc-bf48-4574-b57d-2a9cbd4ef61d___f843170ad78fa9d3d45767f207cc25bd.jpg",
+          "mobileImage": "https://sugoco.vtexassets.com/assets/vtex.file-manager-graphql/images/f5e5b526-57bb-4b19-a5f4-23296d1bbcae___341406ddf5392f3e2e8a13192df2d779.jpg"
+        },
+        {
+          "image": "https://sugoco.vtexassets.com/assets/vtex.file-manager-graphql/images/18f45fb6-1915-4a39-bd2e-6efd6f1906be___c61c9cfcd5e85b653ce9ca701cc33e22.jpg",
+          "mobileImage": "https://sugoco.vtexassets.com/assets/vtex.file-manager-graphql/images/0308e3c9-5eac-42aa-83b8-bb455b3e8b88___dfcf957a3d71b7b870154caf7ef5baff.jpg"
         }
       ]
     }
   },
-  "slider-layout#demo-images": {
+  "slider-layout#home-sugo": {
     "props": {
       "itemsPerPage": {
         "desktop": 1,
@@ -43,11 +54,95 @@
       "blockClass": "carousel"
     }
   },
-
-  "rich-text#shelf-title": {
+ /* "flex-layout.row#home":{
+    "children":["gallery"]
+  },*/
+ /* "gallery": {
     "props": {
-      "text": "## Summer",
-      "blockClass": "shelfTitle"
+      "layouts": [
+        {
+          "name": "whole",
+          "component": "OneOrTwoLineSummary",
+          "itemsPerRow": 1
+        },
+        {
+          "name": "two",
+          "component": "OneOrTwoLineSummary",
+          "itemsPerRow": 2
+        },
+        {
+          "name": "many",
+          "component": "ManyByLineSummary",
+          "itemsPerRow": {
+            "desktop": 5,
+            "mobile": 1
+          }
+        }
+      ],
+      "OneOrTwoLineSummary": "product-summary.shelf",
+      "ManyByLineSummary": "product-summary.shelf"
+    }
+  },/*
+  /*"search-result-layout.customQuery#prueba":{
+    "props": {
+      "querySchema": {
+        "skusFilter": "FIRST_AVAILABLE",
+        "simulationBehavior": "skip",
+        "maxItemsPerPage": 5
+      }
+    },
+    "blocks":["search-result-layout.desktop", "search-result-layout.mobile"]
+  },*/
+  "slider-layout#demo-products": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 5,
+        "tablet": 3,
+        "phone": 2
+      },
+      "infinite": true,
+      "fullWidth": false,
+      "blockClass": "shelf"
+    }
+  },
+  "rich-text#sugo": {
+    "props": {
+      "text": "Estos producto pueden presentar defectos en su presentacion, \nsin embargo su calidad y funcionalidad no se ven afectados.",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "blockClass": "small"
+    }
+  },
+  "list-context.image-list#ahorra-sugo": {
+    "children":["slider-layout#ahorra-sugo"],
+    "props": {
+      "height": 720,
+      "images":[
+        {
+          "image": "https://sugoco.vtexassets.com/assets/vtex.file-manager-graphql/images/97171fed-0eff-4dae-b1d9-db49a62995a4___a5320f7efd4b5522f08a48fce9a0e9a5.jpg",
+          "mobileImage":"https://sugoco.vtexassets.com/assets/vtex.file-manager-graphql/images/88d4738c-84f9-4909-97ab-75fadd316270___794222b37b0b99b0dc1c907ec7cdbdd6.jpg"
+        }
+      ]
+    }
+  },
+  "slider-layout#ahorra-sugo": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "showNavigationArrows": "desktopOnly",
+      "blockClass": "carousel"
+    }
+  },
+  "rich-text#destacados": {
+    "props": {
+      "text": "**Productos destacados**",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "blockClass": "text"
     }
   },
   "flex-layout.row#shelf": {
@@ -60,44 +155,12 @@
       "orderBy": "OrderByTopSaleDESC"
     }
   },
-  "slider-layout#demo-products": {
+  "rich-text#oportunidad": {
     "props": {
-      "itemsPerPage": {
-        "desktop": 5,
-        "tablet": 3,
-        "phone": 1
-      },
-      "infinite": true,
-      "fullWidth": false,
-      "blockClass": "shelf"
-    }
-  },
-
-  "info-card#home": {
-    "props": {
-      "id": "info-card-home",
-      "isFullModeStyle": false,
-      "textPosition": "left",
-      "imageUrl": "https://storecomponents.vteximg.com.br/arquivos/banner-infocard2.png",
-      "headline": "Clearance Sale",
-      "callToActionText": "DISCOVER",
-      "callToActionUrl": "/sale/d",
-      "blockClass": "info-card-home",
-      "textAlignment": "center"
-    }
-  },
-
-  "rich-text#question": {
-    "props": {
-      "text": "**This is an example store built using the VTEX platform.\nWant to know more?**",
-      "blockClass": "question"
-    }
-  },
-
-  "rich-text#link": {
-    "props": {
-      "text": "\n**Reach us at**\nwww.vtex.com.br",
-      "blockClass": "link"
+      "text": "**Última oportunidad**",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "blockClass": "text"
     }
   }
 }

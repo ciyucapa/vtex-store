@@ -7,32 +7,29 @@
   },
   "header-layout.desktop": {
     "children": [
-      "flex-layout.row#1-desktop",
-      "flex-layout.row#2-desktop",
+      //"flex-layout.row#1-desktop",
+      "rich-text#header",
       "flex-layout.row#3-desktop",
       "sticky-layout#4-desktop"
     ]
   },
 
-  "flex-layout.row#1-desktop": {
+ /* "flex-layout.row#1-desktop": {
     "children": ["telemarketing"],
     "props": {
       "fullWidth": true
 
     }
+  },*/
+  "rich-text#header":{
+    "props": {
+      "text": "**ACTUALMENTE SÓLO REALIZAMOS ENVÍOS A BOGOTÁ. RECIBE TU PEDIDO EN HASTA EN 2 DÍAS HÁBILES.**",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "blockClass": "header"
+    }
   },
 
-  "flex-layout.row#2-desktop": {
-    "children": ["image#example"],
-    "props": {
-      "fullWidth": "true"
-    }
-  },
-  "image#example": {
-    "props": {
-      "src": "https://realplaza.vtexassets.com/assets/vtex.file-manager-graphql/images/375e30fd-6c46-42db-85b4-b6d877e7adc3___b2f9d3f64845d50b1860320023cc35a9.jpg"
-    }
-  },
   "flex-layout.row#3-desktop": {
     "props": {
       "blockClass": "menu-link",
