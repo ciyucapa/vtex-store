@@ -8,7 +8,7 @@
       "flex-layout.row#selling-price-savings",
       //"product-installments#summary",
       "product-summary-name",
-      "flex-layout.row#buttons-sugo",
+      "flex-layout.row#button",
       "product-specification-badges"
     ]
   },
@@ -75,11 +75,22 @@
       "blockClass": "summary"
     }
   },
-  "flex-layout.row#buttons-sugo": {
+  "flex-layout.row#button": {
     "children":[
-      "product-summary-buy-button#home"]
+      "product-summary-quantity",
+      "product-summary-buy-button"
+    ],
+    "props":{
+      "blockClass":"button-vitrina"
+    }
   },
-  "product-summary-buy-button#home":{
+  "product-summary-quantity":{
+    "props":{
+      "showLabel": false,
+      "selectorType": "stepper"
+    }
+  },
+  "product-summary-buy-button":{
     "props": {
       "buyButtonText": "Comprar"
     }
