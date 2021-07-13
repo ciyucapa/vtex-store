@@ -23,7 +23,7 @@
   },*/
   "rich-text#header":{
     "props": {
-      "text": "**ACTUALMENTE SÓLO REALIZAMOS ENVÍOS A BOGOTÁ. RECIBE TU PEDIDO EN HASTA EN 2 DÍAS HÁBILES.**",
+      "text": "**ACTUALMENTE SÓLO REALIZAMOS** [**ENVÍOS A BOGOTÁ.**]() **RECIBE TU PEDIDO EN** [**HASTA EN 2 DÍAS HÁBILES.**]()",
       "textAlignment": "CENTER",
       "textPosition": "CENTER",
       "blockClass": "header"

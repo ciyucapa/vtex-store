@@ -1,17 +1,27 @@
 {
   "store.home": {
     "blocks": [
+      "responsive-layout.desktop",
+      "responsive-layout.tablet",
+      "responsive-layout.mobile"
+    ]
+  },
+  
+  "responsive-layout.desktop": {
+    "children":[
       "list-context.image-list#sugo",
-    //  "flex-layout.row#home",
-      //"search-result-layout.customQuery#prueba",
-      "__fold__.experimentalLazyAssets",
-      //"flex-layout.row#deals",
+      "flex-layout.row#vitrine-products",
       "rich-text#sugo",
       "list-context.image-list#ahorra-sugo",
       "rich-text#destacados",
       "flex-layout.row#shelf",
       "rich-text#sugo",
-      "rich-text#oportunidad"
+      "image#curva-arriba",
+      "flex-layout.row#caja",
+      "image#curva-abajo",
+      "rich-text#oportunidad",
+      "flex-layout.row#shelf-two",
+      "rich-text#sugo"
     ]
   },
   "list-context.image-list#sugo": {
@@ -50,60 +60,60 @@
         "phone": 1
       },
       "infinite": true,
-      "showNavigationArrows": "desktopOnly",
+      "showPaginationDots": "never",
+      "showNavigationArrows": "desktopOnly", 
+      "autoplay": {
+        "timeout": 4000,
+        "stopOnHover": true
+      },
       "blockClass": "carousel"
     }
   },
- /* "flex-layout.row#home":{
-    "children":["gallery"]
-  },*/
- /* "gallery": {
-    "props": {
-      "layouts": [
-        {
-          "name": "whole",
-          "component": "OneOrTwoLineSummary",
-          "itemsPerRow": 1
-        },
-        {
-          "name": "two",
-          "component": "OneOrTwoLineSummary",
-          "itemsPerRow": 2
-        },
-        {
-          "name": "many",
-          "component": "ManyByLineSummary",
-          "itemsPerRow": {
-            "desktop": 5,
-            "mobile": 1
-          }
-        }
-      ],
-      "OneOrTwoLineSummary": "product-summary.shelf",
-      "ManyByLineSummary": "product-summary.shelf"
+  "flex-layout.row#vitrine-products":{
+    "children":["search-result-layout.customQuery#home"],
+    "props":{
+      "blockClass":"vitrinas-products"
     }
-  },/*
-  /*"search-result-layout.customQuery#prueba":{
+  },
+  "search-result-layout.customQuery#home": {
     "props": {
       "querySchema": {
-        "skusFilter": "FIRST_AVAILABLE",
-        "simulationBehavior": "skip",
-        "maxItemsPerPage": 5
+        "orderByField": "OrderByReleaseDateDESC",
+        "facetsBehavior": "Dynamic",
+        "skusFilter":"ALL",
+        "simulationBehavior": "default",
+        "installmentCriteria": "MAX_WITHOUT_INTEREST",
+        "__unstableProductOriginVtex": true,
+        "maxItemsPerPage": 15,
+        "queryField": "/155",
+        "mapField": "productClusterIds",
+        "hideUnavailableItems": false
       }
     },
-    "blocks":["search-result-layout.desktop", "search-result-layout.mobile"]
-  },*/
-  "slider-layout#demo-products": {
+    "blocks": [
+      "search-result-layout.desktop#home"//,
+      //"search-result-layout.mobile#home",
+     // "search-not#home"
+    ]
+  },
+  "search-result-layout.desktop#home": {
+    "children": [
+      "flex-layout.row#results"
+    ],
     "props": {
-      "itemsPerPage": {
-        "desktop": 5,
-        "tablet": 3,
-        "phone": 2
-      },
-      "infinite": true,
-      "fullWidth": false,
-      "blockClass": "shelf"
+      "pagination": "show-more"
     }
+  },
+  "flex-layout.row#results": { 
+    "children": [ 
+      "search-content#home"
+    ]
+  },
+  "search-content#home": { 
+    "blocks": ["gallery#home", "not-found"]
+  },
+  "gallery#home": {
+    "blocks": ["product-summary.shelf"]
   },
   "rich-text#sugo": {
     "props": {
@@ -134,33 +144,157 @@
       },
       "infinite": true,
       "showNavigationArrows": "desktopOnly",
-      "blockClass": "carousel"
+      "blockClass": "carousel",
+      "fullWidth":true
     }
   },
   "rich-text#destacados": {
     "props": {
-      "text": "**Productos destacados**",
+      "text": "**Productos [destacados]()**",
       "textAlignment": "CENTER",
       "textPosition": "CENTER",
       "blockClass": "text"
     }
   },
   "flex-layout.row#shelf": {
-    "children": ["list-context.product-list#demo1"]
+    "children": ["list-context.product-list#products"]
   },
-  "list-context.product-list#demo1": {
+  "list-context.product-list#products": {
     "blocks": ["product-summary.shelf"],
-    "children": ["slider-layout#demo-products"],
+    "children": ["slider-layout#products"],
+    "props": {
+      "orderBy": "OrderByReleaseDateDESC"
+      //"collection":"/155"
+    }
+  },
+  "slider-layout#products": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 5,
+        "tablet": 3,
+        "phone": 3
+      },
+      "showPaginationDots": "never",
+      "infinite": true,
+      "fullWidth": false,
+      "blockClass": "shelf"
+    }
+  },
+  "image#curva-arriba":{
+    "props":{
+      "src":"https://sugoco.vtexassets.com/arquivos/curva_arriba-home.jpg",
+      "blockClass":"image-curva"
+    }
+  },
+  "flex-layout.row#caja":{
+    "children":["flex-layout.col#caja-one"],
+    "props":{
+      "horizontalAlign": "center",
+      "fullWidth":true
+    }
+  },
+ "flex-layout.col#caja-one":{
+   "children":["flex-layout.row#caja-one", "flex-layout.row#caja-two"],
+   "props":{
+    
+  }
+ },
+ "flex-layout.row#caja-one":{
+   "children":["rich-text#one"]
+ },
+  "rich-text#one": {
+    "props": {
+      "text": "**Licores desde [40% off]()**",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "blockClass": "prueba"
+    }
+  },
+  "flex-layout.row#caja-two":{
+    "children":[
+      "image#one", 
+      "list-context.product-list#three-product"
+    ],
+    "props":{
+      "blockClass": "caja-two"
+    }
+  },
+  "image#one": {
+    "props": {
+      "src": "https://sugoco.vtexassets.com/assets/vtex.file-manager-graphql/images/6a0c3d32-8346-47e0-a36f-085767529b0d___cc4aa1f4ce2678f5ddf7e6831209eb24.png",
+      "blockClass": "image-licores"
+    }
+  },
+  "list-context.product-list#three-product": {
+    "blocks": ["product-summary.shelf"],
+    "children": ["slider-layout#three"],
     "props": {
       "orderBy": "OrderByTopSaleDESC"
     }
   },
+  "slider-layout#three": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 3,
+        "tablet": 3,
+        "phone": 2
+      },
+      "showPaginationDots": "never",
+      "infinite": true,
+      "fullWidth": false,
+      "blockClass": "icon-licores"
+    }
+  },
+  "image#curva-abajo":{
+    "props":{
+      "src":"https://sugoco.vtexassets.com/arquivos/curva_abajo-home.jpg",
+      "blockClass":"image-curva"
+    }
+  },
+
   "rich-text#oportunidad": {
     "props": {
-      "text": "**Última oportunidad**",
+      "text": "**Última [oportunidad]()**",
       "textAlignment": "CENTER",
       "textPosition": "CENTER",
       "blockClass": "text"
     }
+  },
+  "flex-layout.row#shelf-two":{
+    "children":["list-context.product-list#two-product"]
+  },
+  "list-context.product-list#two-product": {
+    "blocks": ["product-summary.shelf"],
+    "children": ["slider-layout#two"],
+    "props": {
+      "orderBy": "OrderByTopSaleDESC"
+    }
+  },
+  "slider-layout#two": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 5,
+        "tablet": 3,
+        "phone": 2
+      },
+      "showPaginationDots": "never",
+      "infinite": true,
+      "fullWidth": false,
+      "blockClass": "shelf"
+    }
+  },
+  "responsive-layout.mobile": {
+    "children":[
+      "list-context.image-list#sugo", 
+      "flex-layout.row#shelf-two",
+      "rich-text#sugo",
+      "list-context.image-list#ahorra-sugo",
+      "rich-text#destacados",
+      "flex-layout.row#shelf",
+      "image#curva-arriba",
+      "image#curva-abajo",
+      "rich-text#oportunidad",
+      "flex-layout.row#shelf-two"
+    ]
   }
 }

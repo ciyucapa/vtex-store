@@ -1,12 +1,17 @@
 .sliderLayoutContainer {
   justify-content: center;
 }
+
+.sliderLayoutContainer--icon-licores {
+  width: 100%;
+}
+
 .sliderLayoutContainer--carousel {
   background-color: #F0F0F0;
 }
 
 .sliderTrackContainer {
-  max-width: 1520px;
+  max-width: 100%;
 }
 
 .paginationDotsContainer {
@@ -25,3 +30,25 @@
   padding-left: .5rem;
   padding-right: .5rem;
 }
+
+.caretIcon--carousel {
+background-color: #475be0;
+border-radius: 25px;
+color: #F0F0F0;
+padding: 5px;
+}
+
+.caretIcon--shelf {
+  background-color: #475be0;
+  border-radius: 25px;
+  color: #F0F0F0;
+  padding: 5px;
+  }
+
+.caretIcon--icon-licores {
+  background-color: transparent;
+  color: #fff;
+  border: 1px solid #fff;    
+  padding: 20px 10px;
+}
+

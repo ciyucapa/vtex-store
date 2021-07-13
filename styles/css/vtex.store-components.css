@@ -65,6 +65,16 @@
   margin: 1rem 0;
 }
 
+.imageElement--image-curva {
+  width: 100%;
+  margin-bottom: -6px;
+}
+
+.imageElement--image-licores {
+  height: auto;
+  width: 45%;
+}
+
 @media only screen and (min-width: 640px) {
   .newsletter .container {
     padding: 140px;

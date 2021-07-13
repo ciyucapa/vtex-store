@@ -1,15 +1,15 @@
 {
   "product-summary.shelf": {
     "children": [
-      "product-summary-image",
-      "product-summary-description",
-      "product-summary-name",
+      "stack-layout#prodsum",
       "flex-layout.col#productRating",
       "product-summary-space",
       "product-list-price#summary",
       "flex-layout.row#selling-price-savings",
-      "product-installments#summary",
-      "flex-layout.row#buttons-sugo"
+      //"product-installments#summary",
+      "product-summary-name",
+      "flex-layout.row#buttons-sugo",
+      "product-specification-badges"
     ]
   },
   "flex-layout.col#productRating": {
@@ -31,7 +31,7 @@
     "props": {
       "showBadge": false,
       "aspectRatio": "1:1",
-      "maxHeight": 300
+      "maxHeight": 200
     }
   },
 
@@ -76,8 +76,13 @@
     }
   },
   "flex-layout.row#buttons-sugo": {
-    "children":["add-to-cart-button",
-      "product-summary-buy-button"]
+    "children":[
+      "product-summary-buy-button#home"]
+  },
+  "product-summary-buy-button#home":{
+    "props": {
+      "buyButtonText": "Comprar"
+    }
   },
   "product-selling-price#summary": {
     "props": {
@@ -90,6 +95,7 @@
         "discount"
       ],
       "blockClass": "summary"
+      //"savingsPercentage": "10"
     }
   }
 }

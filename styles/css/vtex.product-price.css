@@ -25,9 +25,9 @@
 }
 
 .sellingPriceValue--summary {
-  font-size: 1.25rem;
-  font-weight: 600;
-  color: #2E2E2E;
+  color: #475be0;
+  font-size: 18px;
+  font-family: "Montserrat-SemiBold"
 }
 
 .savings--summary {
@@ -76,4 +76,9 @@
   vertical-align: baseline;
   color: #FFFFFF;
   padding: 0.25rem 0.5rem 0.25rem 0.5rem;
+}
+
+.currencyGroup--sumary {
+  color: #475be0;
+  font-size: 18px;
 }

@@ -1,57 +1,91 @@
 {
   "footer": {
-    "blocks": ["footer-layout.desktop", "footer-layout.mobile"]
+    "blocks": [
+      "footer-layout.desktop", 
+      "footer-layout.mobile"
+    ]
   },
   "footer-layout.desktop": {
     "children": [
+      "image#footer",
       "flex-layout.row#footer-1-desktop",
-      "flex-layout.row#footer-2-desktop",
-      "flex-layout.row#footer-3-desktop"
+      "flex-layout.row#footer-4-desktop",
+      "flex-layout.row#footer-5-desktop",
+      "flex-layout.row#footer-3-desktop",
+      "flex-layout.row#footer-2-desktop"
     ]
   },
+  "image#footer": {
+    "props": {
+      "src": "https://sugoco.vtexassets.com/arquivos/curva_footer.svg",
+      "blockClass":"image-curva"
+    }
+  },
   "flex-layout.row#footer-1-desktop": {
-    "children": [
-      "vtex.menu@2.x:menu#Products",
-      "vtex.menu@2.x:menu#footer-clothing",
-      "vtex.menu@2.x:menu#footer-decoration",
-      "vtex.menu@2.x:menu#footer-bags",
-      "footer-spacer",
-      "social-networks"
-    ],
+    "children": ["flex-layout.col#footer-one"],
     "props": {
-      "blockClass": "menu-row",
-      "paddingTop": 6,
-      "paddingBottom": 3
+      "blockClass": "new"
     }
   },
-
-  "social-networks": {
+  "flex-layout.col#footer-one": {
+    "children":[
+      "image#logo",
+      "rich-text#footer-logo"
+    ]
+  },
+  "image#logo": {
     "props": {
-      "socialNetworks": [
-        {
-          "name": "Facebook",
-          "url": "https://www.facebook.com/vtexonline/"
-        },
-        {
-          "name": "Instagram",
-          "url": "https://www.instagram.com/vtextruecloud/"
-        },
-        {
-          "name": "Twitter",
-          "url": "https://twitter.com/vtexonline"
-        },
-        {
-          "name": "Youtube",
-          "url": "https://www.youtube.com/user/VTEXTV"
-        }
-      ]
+      "src": "https://sugoco.vtexassets.com/assets/vtex/assets-builder/sugoco.sugoco-theme/4.0.3/globals/main-footer-logo___b10be364fdd8f3c9ab32da3cc6ca61f2.svg",
+      "maxWidth": "100px",
+      "maxHeight": "100px"
     }
   },
-
-  "flex-layout.row#footer-2-desktop": {
-    "children": ["accepted-payment-methods"],
+  "rich-text#footer-logo": {
+    "props":{
+      "text":"La primera tienda sostenible donde ahorrando, \ntambién ayudas al planeta.",
+      "blockClass": "logo-footer"
+    }
+  },
+  "flex-layout.row#footer-4-desktop": {
+    "children": ["rich-text#modelo"],
+    "props": {
+      "blockClass": "rich-modelo"
+    }
+  },
+  "rich-text#modelo": {
+    "props": {
+      "text": "Conoce nuestro modelo sostenible haciendo click aquí",
+      "blockClass": "modelo"
+    }
+  },
+  "flex-layout.row#footer-5-desktop": {
+    "children": ["rich-text#somos", "rich-text#somos", "image#industria"],
+    "props": {
+      "blockClass": "rich-modelo"
+    }
+  },
+  "rich-text#somos": {
+    "props": {
+      "text": "Somos trasnparentes"
+    }
+  },
+  "image#industria": {
+    "props": {
+      "src": "https://sugoco.vtexassets.com/arquivos/superintendencia.png"
+    }
+  },
+    "flex-layout.row#footer-2-desktop": {
+    "children": ["flex-layout.col#footer-two"],
     "props": {
       "blockClass": "payment-methods"
+    }
+  },
+  "flex-layout.col#footer-two":{
+    "children":["rich-text#pago", "accepted-payment-methods"]
+  },
+  "rich-text#pago":{
+    "props":{
+      "text":"Realiza tu pago de forma segura"
     }
   },
   "accepted-payment-methods": {
@@ -68,13 +102,14 @@
   },
   "rich-text#footer": {
     "props": {
-      "text": "Todos los derechos reservados Real Plaza Go | Empowered by ",
+      "text": "EN BLANCO",
       "blockClass": "footer"
     }
   },
 
   "footer-layout.mobile": {
     "children": [
+      "image#footer",
       "flex-layout.row#1-footer-mobile",
       "flex-layout.row#2-footer-mobile"
     ]

@@ -3,6 +3,10 @@
   padding: 0 0.5rem;
 }
 
+.stretchChildrenWidth--prueba {
+  background-color: violet;
+}
+
 @media screen and (min-width: 40em) {
   .flexRowContent--menu-link,
   .flexRowContent--main-header {
@@ -92,3 +96,24 @@
 .flexRow--addToCartRow {
   padding-bottom: 1rem;
 }
+
+.flexRow--prueba {
+  background-color: #9eacf0;
+  display:block;
+
+}
+
+.flexRow--caja-two {
+  background-color: #9eacf0;
+
+}
+
+.flexRow--new {
+  background-color: #475be0;
+  
+}
+
+.flexRow--rich-modelo {
+  background-color: #475be0;
+}
+
