@@ -8,7 +8,8 @@
       "flex-layout.row#selling-price-savings",
       //"product-installments#summary",
       "product-summary-name",
-      "flex-layout.row#button",
+      "responsive-layout.desktop#bu",
+      "responsive-layout.mobile#bu",
       "product-specification-badges"
     ]
   },
@@ -18,7 +19,6 @@
     },
     "children": ["product-rating-inline"]
   },
-
   "stack-layout#prodsum": {
     "children": [
       "product-summary-image#shelf",
@@ -26,7 +26,6 @@
       "modal-trigger#quickview" // Check quickview.jsonc
     ]
   },
-
   "product-summary-image#shelf": {
     "props": {
       "showBadge": false,
@@ -34,7 +33,6 @@
       "maxHeight": 200
     }
   },
-
   "vtex.product-highlights@2.x:product-highlights#collection": {
     "props": {
       "type": "collection"
@@ -63,7 +61,8 @@
       "colGap": 2,
       "preserveLayoutOnMobile": true,
       "preventHorizontalStretch": true,
-      "marginBottom": 4
+      "marginBottom": 4,
+      "blockClass": "savingss"
     },
     "children": [
       "product-selling-price#summary",
@@ -75,13 +74,18 @@
       "blockClass": "summary"
     }
   },
-  "flex-layout.row#button": {
+  "responsive-layout.desktop#bu": {
+    "children":["flex-layout.row#button-desktop"]
+  },
+  "flex-layout.row#button-desktop": {
     "children":[
-      "product-summary-quantity",
-      "product-summary-buy-button"
-    ],
+      "flex-layout.col#button-desktop"
+    ]
+  },
+  "flex-layout.col#button-desktop":{
+    "children":[ "product-summary-quantity", "product-summary-quantity" ],
     "props":{
-      "blockClass":"button-vitrina"
+      "blockClass":"vitrinas"
     }
   },
   "product-summary-quantity":{
@@ -90,10 +94,23 @@
       "selectorType": "stepper"
     }
   },
+  /*"add-to-cart-button#desktop":{
+    "props":{
+      "text": "comprar"
+    }
+  },*/
   "product-summary-buy-button":{
-    "props": {
+    "props":{
       "buyButtonText": "Comprar"
     }
+  },
+  "responsive-layout.mobile#bu":{
+    "children":["flex-layout.row#button-mobile"]
+  },
+  "flex-layout.row#button-mobile": {
+    "children":[
+      "product-summary-quantity", "add-to-cart-button"
+    ]
   },
   "product-selling-price#summary": {
     "props": {
@@ -105,8 +122,8 @@
       "markers": [
         "discount"
       ],
-      "blockClass": "summary"
-      //"savingsPercentage": "10"
+      "blockClass": "summary",
+      "message": "{savingsPercentage}"
     }
   }
 }

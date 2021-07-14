@@ -7,20 +7,10 @@
   },
   "header-layout.desktop": {
     "children": [
-      //"flex-layout.row#1-desktop",
       "rich-text#header",
-      "flex-layout.row#3-desktop",
       "sticky-layout#4-desktop"
     ]
   },
-
- /* "flex-layout.row#1-desktop": {
-    "children": ["telemarketing"],
-    "props": {
-      "fullWidth": true
-
-    }
-  },*/
   "rich-text#header":{
     "props": {
       "text": "**ACTUALMENTE SÓLO REALIZAMOS** [**ENVÍOS A BOGOTÁ.**]() **RECIBE TU PEDIDO EN** [**HASTA EN 2 DÍAS HÁBILES.**]()",
@@ -28,21 +18,6 @@
       "textPosition": "CENTER",
       "blockClass": "header"
     }
-  },
-
-  "flex-layout.row#3-desktop": {
-    "props": {
-      "blockClass": "menu-link",
-      "horizontalAlign": "center",
-      "preventHorizontalStretch": true,
-      "preventVerticalStretch": true,
-      "fullWidth": true
-    },
-    "children": [
-      "vtex.menu@2.x:menu#websites",
-      "flex-layout.col#spacer",
-      "vtex.menu@2.x:menu#institutional"
-    ]
   },
   "flex-layout.col#spacer": {
     "props": {
@@ -66,12 +41,11 @@
     },
     "children": [
       "flex-layout.col#logo-desktop",
-      "flex-layout.col#category-menu",
-      "flex-layout.col#spacer",
-      "search-bar",
-      "locale-switcher",
-      "login",
-      "minicart.v2"
+      //"flex-layout.col#category-menu",
+      //"flex-layout.col#spacer",
+      "flex-layout.col#search",
+      "flex-layout.col#minicart"
+      //"login",
     ]
   },
   "flex-layout.col#logo-desktop": {
@@ -80,32 +54,45 @@
     },
     "children": ["logo#desktop"]
   },
-  "flex-layout.col#category-menu": {
+ /* "flex-layout.col#category-menu": {
     "props": {
       "verticalAlign": "middle"
     },
-    "children": ["vtex.menu@2.x:menu#category-menu"]
-  },
+    "children": ["vtex.menu@2.x:menu#menu-sugo"]
+  },*/
   "logo#desktop": {
     "props": {
       "title": "Logo",
       "href": "/",
-      "url": "https://storecomponents.vteximg.com.br/arquivos/store-theme-logo.png",
-      "width": "180"
+      "url": "https://sugoco.vtexassets.com/assets/vtex/assets-builder/sugoco.sugoco-theme/4.0.3/globals/main-logo-normal___f1229d4b1cb0934047638da289a11cab.svg",
+      "width": "100"
     }
   },
+  "flex-layout.col#search": {
+    "children":["search-bar", "vtex.menu@2.x:menu#menu-sugo"],
+    "props":{
+      "blockClass":"search-col"
+    }
+  },
+  "search-bar":{
+    "props":{
+      "placeholder": "¿Qué producto buscas?"
+    }
+  },
+  "flex-layout.col#minicart": {
+    "children":["minicart.v2"]
+  },
   "header-layout.mobile": {
-    "children": ["sticky-layout#1-mobile"]
+    "children": ["rich-text#header","sticky-layout#1-mobile"]
   },
   "sticky-layout#1-mobile": {
     "children": ["flex-layout.row#1-mobile"]
   },
   "flex-layout.row#1-mobile": {
     "children": [
-      "drawer",
       "logo#mobile",
-      "flex-layout.col#spacer",
-      "login",
+      "search-bar",
+      "drawer",
       "minicart.v2"
     ],
     "props": {
@@ -134,8 +121,8 @@
     "props": {
       "title": "Logo",
       "href": "/",
-      "url": "https://storecomponents.vteximg.com.br/arquivos/store-theme-logo-mobile.png",
-      "width": "70"
+      "url": "https://sugoco.vtexassets.com/assets/vtex/assets-builder/sugoco.sugoco-theme/4.0.3/globals/main-logo-normal___f1229d4b1cb0934047638da289a11cab.svg",
+      "width": "60"
     }
   }
 }

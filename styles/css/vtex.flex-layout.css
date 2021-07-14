@@ -26,13 +26,20 @@
 }
 
 .flexRowContent--main-header {
-  background-color: #f0f0f0;
+  background-color: #fff;
+  box-shadow: -5px 1px 16px 0 rgb(0 0 0 / 28%);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .flexRowContent--main-header-mobile {
   align-items: center;
   padding: 0.625rem 0.5rem;
-  background-color: #f0f0f0;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  height: 50px;
 }
 
 .flexRowContent--menu-link :global(.vtex-menu-2-x-styledLink) {
@@ -117,9 +124,17 @@
   background-color: #475be0;
 }
 
-.flexRow--button-vitrina {
+.flexRowContent--savingss {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flexCol--vitrinas {
  display: flex;
  justify-content: space-between;
  flex-direction: row;
  align-items: center;
 }
+

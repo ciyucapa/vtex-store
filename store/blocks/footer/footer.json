@@ -29,15 +29,16 @@
   },
   "flex-layout.col#footer-one": {
     "children":[
-      "image#logo",
+      "logo#logo",
       "rich-text#footer-logo"
     ]
   },
-  "image#logo": {
+  "logo#logo": {
     "props": {
-      "src": "https://sugoco.vtexassets.com/assets/vtex/assets-builder/sugoco.sugoco-theme/4.0.3/globals/main-footer-logo___b10be364fdd8f3c9ab32da3cc6ca61f2.svg",
-      "maxWidth": "100px",
-      "maxHeight": "100px"
+      "title": "Logo",
+      "href": "/",
+      "url": "https://sugoco.vtexassets.com/assets/vtex/assets-builder/sugoco.sugoco-theme/4.0.3/globals/main-footer-logo___b10be364fdd8f3c9ab32da3cc6ca61f2.svg",
+      "width": "120"
     }
   },
   "rich-text#footer-logo": {
