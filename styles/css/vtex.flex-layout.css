@@ -104,17 +104,6 @@
   padding-bottom: 1rem;
 }
 
-.flexRow--prueba {
-  background-color: #9eacf0;
-  display:block;
-
-}
-
-.flexRow--caja-two {
-  background-color: #9eacf0;
-
-}
-
 .flexRow--new {
   background-color: #475be0;
   
@@ -122,6 +111,7 @@
 
 .flexRow--rich-modelo {
   background-color: #475be0;
+  color: #fff;
 }
 
 .flexRowContent--savingss {
@@ -131,10 +121,47 @@
   align-items: center;
 }
 
-.flexCol--vitrinas {
+.flexCol--desktop-but {
  display: flex;
  justify-content: space-between;
  flex-direction: row;
  align-items: center;
 }
 
+.flexCol--but-mobile {
+  background-color: red;
+}
+
+.flexCol--buy-button :global(.vtex-button):hover {
+  background-color: #475be9;
+  color: #fff;
+}
+
+.flexCol--buy-button :global(.vtex-button) {
+  background-color: white;
+  border: 1px solid #475be0;
+  border-radius: 50px;
+  border-width:thin;
+  color: #475be0;
+  min-height: 32px;
+}
+
+.flexCol--cart-mobile :global(.vtex-button) {
+  background-color: white;
+  border: 1px solid #475be0;
+  border-radius: 50px;
+  border-width:thin;
+  color: #475be0;
+  min-height: 32px;
+}
+
+.flexCol--cart-mobile :global(.vtex-button):hover {
+  background-color: #475be9;
+  color: #fff;
+}
+
+.flexRow--cajass {
+  background-color: #9eacf0;
+  padding-bottom: 2rem;
+  width: 100%;
+}

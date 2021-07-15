@@ -152,7 +152,8 @@
       "text": "**Productos [destacados]()**",
       "textAlignment": "CENTER",
       "textPosition": "CENTER",
-      "blockClass": "text"
+      "blockClass": "text",
+      "font": "t-heading-2"
     }
   },
   "flex-layout.row#shelf": {
@@ -185,50 +186,66 @@
       "blockClass":"image-curva"
     }
   },
-  "flex-layout.row#caja":{
-    "children":["flex-layout.col#caja-one"],
+  "flex-layout.row#caja": {
+    "children":["flex-layout.col#cajaOne"],
     "props":{
-      "horizontalAlign": "center",
-      "fullWidth":true
+      "blockClass":"cajass"
     }
   },
- "flex-layout.col#caja-one":{
-   "children":["flex-layout.row#caja-one", "flex-layout.row#caja-two"],
-   "props":{
-    
-  }
- },
- "flex-layout.row#caja-one":{
-   "children":["rich-text#one"]
- },
-  "rich-text#one": {
+  "flex-layout.col#cajaOne": {
+    "children":[ "flex-layout.row#cajaOne",  "flex-layout.row#cajaTwo"],
+    "props":{
+      "blockClass":"cajaOne"
+    }
+  },
+  "flex-layout.row#cajaOne": {
+    "children":["rich-text#licores"],
+    "props":{
+      "blockClass":"cajaOne"
+    }
+  },
+  "flex-layout.row#cajaTwo": {
+    "children":["flex-layout.col#caja-item", "flex-layout.col#caja-item-one"],
+    "props":{
+      "blockClass":"cajaTwo"
+    }
+  },
+  "rich-text#licores": {
     "props": {
-      "text": "**Licores desde [40% off]()**",
+      "text": "Licores desde [40% off]()",
       "textAlignment": "CENTER",
       "textPosition": "CENTER",
-      "blockClass": "prueba"
+      "blockClass": "text-licores",
+      "font": "t-heading-2"
     }
   },
-  "flex-layout.row#caja-two":{
-    "children":[
-      "image#one", 
-      "list-context.product-list#three-product"
-    ],
+  
+  "flex-layout.col#caja-item": {
+    "children":["image#one"],
     "props":{
-      "blockClass": "caja-two"
+      "blockClass":"caja-item-one"
+      
+    }
+  },
+  "flex-layout.col#caja-item-one": {
+    "children":["list-context.product-list#three-product"],
+    "props":{
+      "blockClass":"caja-item",
+        "width":"75%"
     }
   },
   "image#one": {
     "props": {
       "src": "https://sugoco.vtexassets.com/assets/vtex.file-manager-graphql/images/6a0c3d32-8346-47e0-a36f-085767529b0d___cc4aa1f4ce2678f5ddf7e6831209eb24.png",
-      "blockClass": "image-licores"
+      "blockClass": "licores"
     }
   },
   "list-context.product-list#three-product": {
     "blocks": ["product-summary.shelf"],
     "children": ["slider-layout#three"],
     "props": {
-      "orderBy": "OrderByTopSaleDESC"
+      "orderBy": "OrderByTopSaleDESC",
+      "blockClass":"productss"
     }
   },
   "slider-layout#three": {
@@ -256,7 +273,8 @@
       "text": "**Última [oportunidad]()**",
       "textAlignment": "CENTER",
       "textPosition": "CENTER",
-      "blockClass": "text"
+      "blockClass": "text",
+      "font": "t-heading-2"
     }
   },
   "flex-layout.row#shelf-two":{

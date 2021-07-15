@@ -1,0 +1,7 @@
+
+.buttonText {
+    text-transform: capitalize;
+    /*font-family: Montserrat-Regular;*/
+    font-size: .875rem;
+    letter-spacing: 0;
+}

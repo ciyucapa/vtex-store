@@ -50,35 +50,15 @@
   max-height: 200px;
 }
 
-.buyButton :global(.vtex-button) {
-  background-color:#fff;
-  text-transform: capitalize;
-  color: #475be9;
-  border-radius: 25px;
-  min-height: 30px;
-  border-color: #475be9;
-}
-
-.buyButton :global(.vtex-button):hover {
-  background-color:#475be9;
-  color: #fff;
-  border-radius: 25px;
-  min-height: 30px;
-}
-
 .element {
   background-color: #fff;
   max-width: 220px!important;
-  padding: 40px 0;
+  padding: 40px 0px;
   margin: 0 auto;
   border-radius: 9px;
   width: 100%;
   position: relative;
   border-bottom: .9px solid #e5e6e7;
   border-radius: inherit;
-}
-
-.buyButtonText {
-  font-size: small;
 }
 

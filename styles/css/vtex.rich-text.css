@@ -28,7 +28,6 @@
 }
 
 .container--text {
-  font-size:xx-large;
   color: #475be9;
   font-family: Montserrat-Regular;
 }
@@ -40,10 +39,8 @@
   font-weight: 400;
 }
 
-.container--prueba {
-  background-color: #9eacf0;
+.container--text-licores {
   color: #f1f1f1;
-  font-size: xx-large;
   font-family: Montserrat-Regular;
 }
 
@@ -106,6 +103,7 @@
   font-size: 26px;
   font-family: Montserrat-Regular;
 }
+
 
 @media only screen and (min-width: 640px) {
   .container--question .strong {
