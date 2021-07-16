@@ -87,7 +87,10 @@
 .searchBarContainer :global(.vtex-input-prefix__group){
   border-bottom: 1px solid #475be0;
  }
- 
+
+ .logoContainer {
+   padding: 0;
+ }
 
 @media only screen and (min-width: 640px) {
   .newsletter .container {
@@ -134,4 +137,28 @@
   color: #3f3f40;
   font-weight: bold;
   font-size: 30px;
+}
+
+.imageElement--aenor-image {
+  height: 60px;
+}
+
+.imageElement--huella-image {
+  height: 95px;
+}
+
+.imageElement--visa-image {
+  height: 20px;
+}
+
+.imageElement--mastercard-image {
+  height: 44px;
+}
+
+.imageElement--american-image {
+  height: 26px;
+}
+
+.imageElement--diner-image {
+  height: 33px;
 }

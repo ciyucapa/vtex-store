@@ -8,6 +8,7 @@
   
   "responsive-layout.desktop": {
     "children":[
+      "training-app",
       "list-context.image-list#sugo",
       "flex-layout.row#vitrine-products",
       "rich-text#sugo",
@@ -22,6 +23,11 @@
       "flex-layout.row#shelf-two",
       "rich-text#sugo"
     ]
+  },
+  "training-app": {
+    "props":{
+      "name": "cindy"
+    }
   },
   "list-context.image-list#sugo": {
     "children": ["slider-layout#home-sugo"],
@@ -71,7 +77,8 @@
   "flex-layout.row#vitrine-products":{
     "children":["search-result-layout.customQuery#home"],
     "props":{
-      "blockClass":"vitrinas-products"
+      "blockClass":"vitrinas-products",
+      "width":"100%"
     }
   },
   "search-result-layout.customQuery#home": {
@@ -86,7 +93,8 @@
         "maxItemsPerPage": 15,
         "queryField": "/155",
         "mapField": "productClusterIds",
-        "hideUnavailableItems": false
+        "hideUnavailableItems": false,
+        "blockClass": "vitrina-one"
       }
     },
     "blocks": [
@@ -149,11 +157,10 @@
   },
   "rich-text#destacados": {
     "props": {
-      "text": "**Productos [destacados]()**",
+      "text": "## Productos  **destacados**",
       "textAlignment": "CENTER",
       "textPosition": "CENTER",
-      "blockClass": "text",
-      "font": "t-heading-2"
+      "blockClass": "text"
     }
   },
   "flex-layout.row#shelf": {
@@ -163,7 +170,7 @@
     "blocks": ["product-summary.shelf"],
     "children": ["slider-layout#products"],
     "props": {
-      "orderBy": "OrderByReleaseDateDESC"
+      "orderBy": "OrderByTopSaleDESC"
       //"collection":"/155"
     }
   },
@@ -212,11 +219,10 @@
   },
   "rich-text#licores": {
     "props": {
-      "text": "Licores desde [40% off]()",
+      "text": "## Licores desde **40% off** ",
       "textAlignment": "CENTER",
       "textPosition": "CENTER",
-      "blockClass": "text-licores",
-      "font": "t-heading-2"
+      "blockClass": "text-one"
     }
   },
   
@@ -244,8 +250,7 @@
     "blocks": ["product-summary.shelf"],
     "children": ["slider-layout#three"],
     "props": {
-      "orderBy": "OrderByTopSaleDESC",
-      "blockClass":"productss"
+      "orderBy": "OrderByPriceDESC"
     }
   },
   "slider-layout#three": {
@@ -270,7 +275,7 @@
 
   "rich-text#oportunidad": {
     "props": {
-      "text": "**Última [oportunidad]()**",
+      "text": "## Última **oportunidad**",
       "textAlignment": "CENTER",
       "textPosition": "CENTER",
       "blockClass": "text",
@@ -284,7 +289,8 @@
     "blocks": ["product-summary.shelf"],
     "children": ["slider-layout#two"],
     "props": {
-      "orderBy": "OrderByTopSaleDESC"
+      "orderBy": "OrderByBestDiscountDESC",
+      "hideUnavailableItems": true
     }
   },
   "slider-layout#two": {

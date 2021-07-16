@@ -22,16 +22,6 @@
   justify-content: center;
 }
 
-.link {
-  text-decoration-color: #61c800;
-  color: #475be9;
-}
-
-.container--text {
-  color: #475be9;
-  font-family: Montserrat-Regular;
-}
-
 .container--small {
   font-size:small;
   color: #92989b;
@@ -42,6 +32,44 @@
 .container--text-licores {
   color: #f1f1f1;
   font-family: Montserrat-Regular;
+}
+
+.container--text {
+  color: #475be9;
+  font-family: Montserrat-Regular;
+}
+
+.strong--text {
+  position: relative;
+}
+
+.strong--text::after{
+  content: "";
+  bottom: -2px;
+  left: 0;
+  right: 0;
+  position: absolute;
+  height: 5px;
+  background-color: #61C800;
+}
+
+.container--text-one {
+  color: #fff;
+  font-family: Montserrat-Regular;
+}
+
+.strong--text-one {
+  position: relative;
+}
+
+.strong--text-one::after{
+  content: "";
+  bottom: -2px;
+  left: 0;
+  right: 0;
+  position: absolute;
+  height: 5px;
+  background-color: #61C800;
 }
 
 .container--header {
@@ -98,11 +126,58 @@
   font-size: 14px;
 }
 
-.wrapper--logo-footer{
+.container--text-logo {
   color: #fff;
+  font-weight: 400;
   font-size: 26px;
-  font-family: Montserrat-Regular;
+  line-height: 30px;
+  letter-spacing: .03rem;
 }
+
+.container--text-footer-somos {
+  color: #fff;
+  font-size: 14px;
+}
+
+.link--sugo-footer {
+  color: #9eabf0!important;
+  text-decoration: none;
+}
+
+.container--sugo-footer {
+    font-size: 12px!important;
+    color: #9eabf0!important;
+    white-space: nowrap;
+}
+
+.container--text-footer {
+  color: #fff;
+  font-size: 14px;
+
+}
+
+.paragraph--small{
+  color: #92989b;
+  opacity: 1;
+  font-weight: 600;
+  position: relative;
+  text-align: left;
+  margin-bottom: 30px;
+  font-size: .75rem;
+}
+.paragraph--small::before{
+  font-family: icomoon;
+  content: "\e935";
+  font-size: 1.5rem;
+  text-indent: 0;
+  display: block;
+  position: absolute;
+  top: -3px;
+  left: -31px;
+  color: #7ecb34!important;
+  font-weight: 500;
+}
+
 
 
 @media only screen and (min-width: 640px) {

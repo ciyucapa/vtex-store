@@ -58,7 +58,7 @@
   },
   "flex-layout.row#selling-price-savings": {
     "props": {
-      "colGap": 2,
+      "colGap": 4,
       "preserveLayoutOnMobile": true,
       "preventHorizontalStretch": true,
       "marginBottom": 4,

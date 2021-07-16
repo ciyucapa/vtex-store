@@ -53,12 +53,18 @@
 .element {
   background-color: #fff;
   max-width: 220px!important;
-  padding: 40px 0px;
   margin: 0 auto;
   border-radius: 9px;
   width: 100%;
   position: relative;
   border-bottom: .9px solid #e5e6e7;
   border-radius: inherit;
+  padding: 40px 0px;
 }
 
+ .clearLink {
+   border-radius: 5px;
+   background-color: #fff;
+   margin-left: 10px;
+   margin-right: 10px;
+ }

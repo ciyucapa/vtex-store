@@ -266,14 +266,14 @@
             "letterSpacing": "0"
           },
           "heading-3": {
-            "fontFamily": "San Francisco, -apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica neue, helvetica, ubuntu, roboto, noto, segoe ui, arial, sans-serif",
+            "fontFamily": "Montserrat-Regular",
             "fontWeight": "700",
             "fontSize": "1.75rem",
             "textTransform": "initial",
             "letterSpacing": "0"
           },
           "heading-4": {
-            "fontFamily": "San Francisco, -apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica neue, helvetica, ubuntu, roboto, noto, segoe ui, arial, sans-serif",
+            "fontFamily": "Montserrat-Regular",
             "fontWeight": "normal",
             "fontSize": "1.5rem",
             "textTransform": "initial",

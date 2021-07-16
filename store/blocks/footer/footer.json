@@ -9,10 +9,8 @@
     "children": [
       "image#footer",
       "flex-layout.row#footer-1-desktop",
-      "flex-layout.row#footer-4-desktop",
-      "flex-layout.row#footer-5-desktop",
-      "flex-layout.row#footer-3-desktop",
-      "flex-layout.row#footer-2-desktop"
+      "flex-layout.row#footer-2-desktop",
+      "flex-layout.row#footer-3-desktop"
     ]
   },
   "image#footer": {
@@ -25,86 +23,170 @@
     "children": ["flex-layout.col#footer-one"],
     "props": {
       "blockClass": "new"
+
     }
   },
   "flex-layout.col#footer-one": {
     "children":[
-      "logo#logo",
-      "rich-text#footer-logo"
-    ]
+      "logo#logo-footer",
+      "rich-text#text-logo"
+    ],
+    "props": {
+      "marginLeft": 9
+    }
   },
-  "logo#logo": {
+  "logo#logo-footer": {
     "props": {
       "title": "Logo",
       "href": "/",
       "url": "https://sugoco.vtexassets.com/assets/vtex/assets-builder/sugoco.sugoco-theme/4.0.3/globals/main-footer-logo___b10be364fdd8f3c9ab32da3cc6ca61f2.svg",
-      "width": "120"
+      "width": "110"
     }
   },
-  "rich-text#footer-logo": {
+  "rich-text#text-logo": {
     "props":{
       "text":"La primera tienda sostenible donde ahorrando, \ntambién ayudas al planeta.",
-      "blockClass": "logo-footer"
+      "blockClass": "text-logo"
     }
   },
-  "flex-layout.row#footer-4-desktop": {
-    "children": ["rich-text#modelo"],
+  "flex-layout.row#footer-2-desktop": {
+    "children": ["flex-layout.col#footer-5-desktop", "flex-layout.col#footer-6-desktop", "flex-layout.col#footer-7-desktop"],
     "props": {
-      "blockClass": "rich-modelo"
+      "blockClass": "new"
     }
   },
-  "rich-text#modelo": {
+  "flex-layout.col#footer-5-desktop":{
+    "children":["rich-text#somos"],
     "props": {
-      "text": "Conoce nuestro modelo sostenible haciendo click aquí",
-      "blockClass": "modelo"
+      "marginLeft": 9,
+      "width":"17%"
     }
   },
-  "flex-layout.row#footer-5-desktop": {
-    "children": ["rich-text#somos", "rich-text#somos", "image#industria"],
+  "flex-layout.col#footer-6-desktop":{
+    "children":["vtex.menu@2.x:menu#footer-desktop"],
     "props": {
-      "blockClass": "rich-modelo"
+      "blockClass": "footer-two",
+      "width":"54%"
+    }
+  },
+  "flex-layout.col#footer-7-desktop":{
+    "children":["image#industria"],
+    "props": {
+      "blockClass": "footer-three",
+      "width":"29%"
     }
   },
   "rich-text#somos": {
     "props": {
-      "text": "Somos trasnparentes"
+      "text": "Somos transparentes",
+      "blockClass": "text-footer-somos"
     }
   },
   "image#industria": {
     "props": {
-      "src": "https://sugoco.vtexassets.com/arquivos/superintendencia.png"
+      "src": "https://sugoco.vtexassets.com/arquivos/superintendencia.png",
+      "maxHeight": 45
     }
   },
-    "flex-layout.row#footer-2-desktop": {
-    "children": ["flex-layout.col#footer-two"],
+  "flex-layout.row#footer-3-desktop": {
+    "children": ["flex-layout.col#footer-3-one", "flex-layout.col#foter-3-two"],
     "props": {
-      "blockClass": "payment-methods"
+      "blockClass": "new"
     }
   },
-  "flex-layout.col#footer-two":{
-    "children":["rich-text#pago", "accepted-payment-methods"]
+  "flex-layout.col#footer-3-one":{
+    "children":["rich-text#pago", "flex-layout.col#images-pagoss", "rich-text#sugo-footer"],
+    "props": {
+      "marginLeft": 9,
+      "width": "71%"
+    }
+  },
+  "flex-layout.col#foter-3-two":{
+    "children":["rich-text#excelencia", "flex-layout.row#aenor"],
+    "props": {
+      "blockClass": "excelencia",
+      "width": "29%"
+    }
   },
   "rich-text#pago":{
     "props":{
-      "text":"Realiza tu pago de forma segura"
+      "text":"Realiza tu pago de forma segura",
+      "blockClass": "text-footer"
     }
   },
-  "accepted-payment-methods": {
-    "props": {
-      "paymentMethods": ["MasterCard", "Visa", "Diners Club"]
+  "rich-text#sugo-footer":{
+    "props":{
+      "text":"Sugo Colombia SAS | NIT:901.396.973-9 | Dirección: Cra 13 # 90-17 Bogotá | E-mail de notificación judicial: legal@sugo.com",
+      "blockClass": "sugo-footer"
     }
   },
-
-  "flex-layout.row#footer-3-desktop": {
-    "children": ["rich-text#footer"],
+  
+  "flex-layout.col#images-pagoss":{
+    "children":["image#visa", "image#mastercad", "image#american", "image#diner"],
     "props": {
-      "blockClass": "credits"
+      "blockClass": "pagos",
+      "preventVerticalStrech": true
     }
   },
-  "rich-text#footer": {
+  "image#visa": {
     "props": {
-      "text": "EN BLANCO",
-      "blockClass": "footer"
+      "src": "https://sugoco.vtexassets.com/assets/vtex/assets-builder/sugoco.sugoco-theme/4.0.3/globals/visa___ba3705d5ddd03e1f4758ba127e779b0e.svg",
+      "blockClass": "visa-image"
+    }
+  },
+  "image#mastercad": {
+    "props": {
+      "src": "https://sugoco.vtexassets.com/assets/vtex/assets-builder/sugoco.sugoco-theme/4.0.3/globals/master___466ee8a80a25a547e643b6925bc7599e.svg",
+      "blockClass": "mastercard-image"
+    }
+  },
+  "image#american": {
+    "props": {
+      "src": "https://sugoco.vtexassets.com/assets/vtex/assets-builder/sugoco.sugoco-theme/4.0.3/globals/american___a37a61c9f136c029b5d8d71cc6878fe0.svg",
+      "blockClass": "american-image"
+    }
+  },
+  "image#diner": {
+    "props": {
+      "src": "https://sugoco.vtexassets.com/assets/vtex/assets-builder/sugoco.sugoco-theme/4.0.3/globals/diners___1fdc888054f802c9ca8736abfaa8d38a.svg",
+      "blockClass": "diner-image"
+    }
+  },
+  
+  "rich-text#excelencia":{
+    "props":{
+      "text":"Excelencia en todo lo que hacemos",
+      "blockClass": "text-footer-somos"
+    }
+  },
+  "flex-layout.row#aenor": {
+    "children":["image#aenor-one", "image#aenor-two", "image#aenor-three" ],
+    "props": {
+      "blockClass": "aenor"
+    }
+  },
+  "image#aenor-one": {
+    "props": {
+      "src": "https://sugoco.vtexassets.com/arquivos/iso_1-v2.png",
+      "blockClass": "aenor-image"
+    }
+  },
+  "image#aenor-two": {
+    "props": {
+      "src": "https://sugoco.vtexassets.com/arquivos/iso_2-v2.png",
+      "blockClass": "aenor-image"
+    }
+  },
+  "image#aenor-three": {
+    "props": {
+      "src": "https://sugoco.vtexassets.com/arquivos/iso_3-v2.png",
+      "blockClass": "aenor-image"
+    }
+  },
+  "image#huella": {
+    "props": {
+      "src": "https://sugoco.vtexassets.com/arquivos/iso_4-v2.png",
+      "blockClass": "huella-image"
     }
   },
 

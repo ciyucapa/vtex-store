@@ -46,17 +46,5 @@ padding: 5px;
   color: #fff;
   border: 1px solid #fff;    
   padding: 20px 10px;
-  border-radius: 0 5px 5px 0;
+ /* border-radius: 0 5px 5px 0;*/
 }
-
-.sliderTrackContainer--icon-licores {
-  padding-left: 25.5px;
-  padding-right: 25.5px;
-}
-
-/*.sliderLayoutContainer--icon-licores {
-  background-color: red;
-  border-radius: 5px;
-  margin-top: 0;
-  min-height: 266px!important;
-}*/

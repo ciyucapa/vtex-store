@@ -1,7 +1,7 @@
 {
     "vtex.menu@2.x:menu#menu-sugo": {
         "props": {
-
+            "blockClass": "menu-header" /*MODIFICAR CSSS*/
         },
         "children": [
             "menu-item#categorias",

@@ -1,0 +1,49 @@
+{
+  "vtex.menu@2.x:menu#footer-desktop": {
+    "props": {
+      "orientation": "horizontal",
+      "blockClass": "menu-footer",
+      "items": [
+        {
+          "id": "menu-item-terminos",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": true,
+            "tagTitle": "Terminos y condiciones",
+            "text": "Terminos y condiciones"
+          }
+        },
+        {
+          "id": "menu-item-politica",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+             "type": "internal",
+             "href": "#",
+             "noFollow": true,
+             "tagTitle": "Política de privacidad",
+             "text": "Política de privacidad"
+            }
+        },
+        {
+            "id": "menu-item-peticiones",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+              "type": "internal",
+              "href": "#",
+              "noFollow": true,
+              "tagTitle": "Peticiones, quejas y reclamos",
+              "text": "Peticiones, quejas y reclamos"
+            }
+        }
+      ]
+    }
+  }
+}
