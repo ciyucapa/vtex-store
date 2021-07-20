@@ -66,6 +66,7 @@
     "children":["vtex.menu@2.x:menu#footer-desktop"],
     "props": {
       "blockClass": "footer-two",
+      "marginLeft": 7,
       "width":"54%"
     }
   },
@@ -73,7 +74,7 @@
     "children":["image#industria"],
     "props": {
       "blockClass": "footer-three",
-      "width":"29%"
+      "width":"31%"
     }
   },
   "rich-text#somos": {
@@ -85,7 +86,7 @@
   "image#industria": {
     "props": {
       "src": "https://sugoco.vtexassets.com/arquivos/superintendencia.png",
-      "maxHeight": 45
+      "blockClass": "industria-image"
     }
   },
   "flex-layout.row#footer-3-desktop": {
@@ -97,15 +98,16 @@
   "flex-layout.col#footer-3-one":{
     "children":["rich-text#pago", "flex-layout.col#images-pagoss", "rich-text#sugo-footer"],
     "props": {
-      "marginLeft": 9,
-      "width": "71%"
+      "marginLeft": 10,
+      "width": "50%"
     }
   },
   "flex-layout.col#foter-3-two":{
     "children":["rich-text#excelencia", "flex-layout.row#aenor"],
     "props": {
       "blockClass": "excelencia",
-      "width": "29%"
+      "horizontalAlign": "center",
+      "width": "50%"
     }
   },
   "rich-text#pago":{
@@ -156,7 +158,7 @@
   "rich-text#excelencia":{
     "props":{
       "text":"Excelencia en todo lo que hacemos",
-      "blockClass": "text-footer-somos"
+      "blockClass": "excelencia"
     }
   },
   "flex-layout.row#aenor": {

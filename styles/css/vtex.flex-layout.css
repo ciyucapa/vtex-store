@@ -28,9 +28,6 @@
 .flexRowContent--main-header {
   background-color: #fff;
   box-shadow: -5px 1px 16px 0 rgb(0 0 0 / 28%);
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
 }
 
 .flexRowContent--main-header-mobile {
@@ -116,10 +113,6 @@
   width: 410px;
 }
 
-.flexRow--aenor {
-  background-color: green;
-}
-
 .flexCol--footer-two {
   display: flex;
   justify-content: space-between;
@@ -179,5 +172,10 @@
 }
 
 .flexCol--excelencia {
-  padding-top: 37px;
+  align-items: center;
+  padding-left: 106px;
+}
+
+.flexRow--aenor {
+ background-color: red;
 }

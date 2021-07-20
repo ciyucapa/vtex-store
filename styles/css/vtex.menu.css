@@ -9,3 +9,7 @@
     color: #fff;
 }
 
+.menuContainer--menu-footer :global(.vtex-menu-2-x-styledLinkContainer) {
+    margin: 0;
+    margin-right: 15px;
+}

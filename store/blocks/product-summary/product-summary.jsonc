@@ -8,6 +8,7 @@
       "flex-layout.row#selling-price-savings",
       //"product-installments#summary",
       "product-summary-name",
+      "expiration-app",
       "responsive-layout.desktop#bu",
       "responsive-layout.mobile#bu",
       "product-specification-badges"

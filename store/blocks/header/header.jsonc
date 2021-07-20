@@ -7,30 +7,65 @@
   },
   "header-layout.desktop": {
     "children": [
-      "rich-text#header",
       "sticky-layout#4-desktop"
     ]
-  },
-  "rich-text#header":{
-    "props": {
-      "text": "**ACTUALMENTE SÓLO REALIZAMOS** [**ENVÍOS A BOGOTÁ.**]() **RECIBE TU PEDIDO EN** [**HASTA EN 2 DÍAS HÁBILES.**]()",
-      "textAlignment": "CENTER",
-      "textPosition": "CENTER",
-      "blockClass": "header"
-    }
-  },
-  "flex-layout.col#spacer": {
-    "props": {
-      "width": "grow"
-    }
   },
   "sticky-layout#4-desktop": {
     "props": {
       "blockClass": "sticky-header"
     },
-    "children": ["flex-layout.row#4-desktop"]
+    "children": ["rich-text#header", "flex-layout.row#header-desktop"]
   },
-  "flex-layout.row#4-desktop": {
+  "flex-layout.row#header-desktop": {
+    "props": {
+      "blockClass": "main-header",
+      "width": "100%"
+    },
+    "children": ["flex-layout.col#header-one", "flex-layout.col#header-two", "flex-layout.col#header-three"]
+  },
+  "rich-text#header":{
+    "props": {
+      "text": "**ACTUALMENTE SÓLO REALIZAMOS** [ENVÍOS A BOGOTÁ.]() **RECIBE TU PEDIDO EN** [HASTA EN 2 DÍAS HÁBILES.]()",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "blockClass": "header"
+    }
+  },
+  "flex-layout.col#header-one" : {
+    "children": ["logo#desktop"],
+    "props": {
+      "verticalAlign": "middle",
+      "width": "18"
+    }
+  },
+  "flex-layout.col#header-two" : {
+    "children": ["search-bar#header", "vtex.menu@2.x:menu#menu-sugo"],
+    "props": {
+      "verticalAlign": "middle",
+      "width": "60"
+    }
+  },
+  "flex-layout.col#header-three" : {
+    "children": ["minicart.v2"],
+    "props": {
+      "verticalAlign": "middle",
+      "width": "22"
+    }
+  },
+  "logo#desktop": {
+    "props": {
+      "title": "Logo",
+      "href": "/",
+      "url": "https://sugoco.vtexassets.com/assets/vtex/assets-builder/sugoco.sugoco-theme/4.0.3/globals/main-logo-normal___f1229d4b1cb0934047638da289a11cab.svg",
+      "width": "100"
+    }
+  },
+  "search-bar#header":{
+    "props":{
+      "placeholder": "¿Qué producto buscas?"
+    }
+  }
+  /*"flex-layout.row#4-desktop": {
     "props": {
       "blockClass": "main-header",
       "horizontalAlign": "center",
@@ -40,7 +75,6 @@
       "fullWidth": true
     },
     "children": [
-      "flex-layout.col#logo-desktop",
       //"flex-layout.col#category-menu",
       //"flex-layout.col#spacer",
       "flex-layout.col#search",
@@ -48,30 +82,17 @@
       //"login",
     ]
   },
-  "flex-layout.col#logo-desktop": {
-    "props": {
-      "verticalAlign": "middle"
-    },
-    "children": ["logo#desktop"]
-  },
  /* "flex-layout.col#category-menu": {
     "props": {
       "verticalAlign": "middle"
     },
     "children": ["vtex.menu@2.x:menu#menu-sugo"]
-  },*/
-  "logo#desktop": {
-    "props": {
-      "title": "Logo",
-      "href": "/",
-      "url": "https://sugoco.vtexassets.com/assets/vtex/assets-builder/sugoco.sugoco-theme/4.0.3/globals/main-logo-normal___f1229d4b1cb0934047638da289a11cab.svg",
-      "width": "100"
-    }
   },
   "flex-layout.col#search": {
     "children":["search-bar", "vtex.menu@2.x:menu#menu-sugo"],
     "props":{
-      "blockClass":"search-col"
+      "blockClass":"search-col",
+      "width": "60"
     }
   },
   "search-bar":{
@@ -80,9 +101,12 @@
     }
   },
   "flex-layout.col#minicart": {
-    "children":["minicart.v2"]
-  },
-  "header-layout.mobile": {
+    "children":["minicart.v2"],
+    "props": {
+      "width": "22"
+    }
+  },*/
+  /*"header-layout.mobile": {
     "children": ["rich-text#header","sticky-layout#1-mobile"]
   },
   "sticky-layout#1-mobile": {
@@ -124,5 +148,5 @@
       "url": "https://sugoco.vtexassets.com/assets/vtex/assets-builder/sugoco.sugoco-theme/4.0.3/globals/main-logo-normal___f1229d4b1cb0934047638da289a11cab.svg",
       "width": "60"
     }
-  }
+  }*/
 }

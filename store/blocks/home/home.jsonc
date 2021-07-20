@@ -8,7 +8,6 @@
   
   "responsive-layout.desktop": {
     "children":[
-      "training-app",
       "list-context.image-list#sugo",
       "flex-layout.row#vitrine-products",
       "rich-text#sugo",
@@ -23,11 +22,6 @@
       "flex-layout.row#shelf-two",
       "rich-text#sugo"
     ]
-  },
-  "training-app": {
-    "props":{
-      "name": "cindy"
-    }
   },
   "list-context.image-list#sugo": {
     "children": ["slider-layout#home-sugo"],
