@@ -1,139 +1,199 @@
 {
     "vtex.menu@2.x:menu#menu-sugo": {
         "props": {
-            "blockClass": "menu-header" /*MODIFICAR CSSS*/
-        },
-        "children": [
-            "menu-item#categorias",
-            "menu-item#todos",
-            "menu-item#desde",
-            "menu-item#ultima",
-            "menu-item#modelos"
-          ]
-    },
-    "menu-item#categorias": {
-        "props": {
-            "text": "Categorías",
-            "iconProps": {
-                "id": "cart",
-                "isActive": true
+        "orientation": "horizontal",
+        "blockClass": "menu-header",
+        "items": [
+            {
+                "id": "menu-item-todos",
+                "type": "custom",
+                "iconId": null,
+                "highlight": false,
+                "itemProps": {
+                    "type": "internal",
+                    "href": "#",
+                    "noFollow": true,
+                    "tagTitle": "Todos",
+                    "text": "Todos"
+                }
+            },
+            {
+                "id": "menu-item-desde70%",
+                "type": "custom",
+                "iconId": null,
+                "highlight": false,
+                "itemProps": {
+                    "type": "internal",
+                    "href": "#",
+                    "noFollow": true,
+                    "tagTitle": "Desde 70%",
+                    "text": "Desde 70%"
+                }
+            },
+            {
+                "id": "menu-item-ultima",
+                "type": "custom",
+                "iconId": null,
+                "highlight": false,
+                "itemProps": {
+                    "type": "internal",
+                    "href": "#",
+                    "noFollow": true,
+                    "tagTitle": "Última oportunidad",
+                    "text": "Última oportunidad"
+                }
+            },
+            {
+                "id": "menu-item-modelo",
+                "type": "custom",
+                "iconId": null,
+                "highlight": false,
+                "itemProps": {
+                    "type": "internal",
+                    "href": "#",
+                    "noFollow": true,
+                    "tagTitle": "Modelo sostenible",
+                    "text": "Modelo sostenible"
+                }
             }
-        },
-        "blocks": [
-            "vtex.menu@2.x:submenu#category-submenu"
         ]
+        },
+        "children": ["menu-item#categories"]
     },
-    "vtex.menu@2.x:submenu#category-submenu": {
+    "menu-item#categories": {
         "props": {
-          "width": "auto"
+          "id": "menu-item-categories",
+          "type": "custom",
+          "iconId": {
+              "id": "nav-caret--down"
+          },
+          "iconPosition": "right",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Categorias",
+            "text": "Categorias"
+          }
         },
-        "children": [
-          "vtex.menu@2.x:menu#category-submenu"
-        ]
-    },
-    "vtex.menu@2.x:menu#category-submenu": {
-        "props": {
-          "orientation": "vertical"
-        },
-        "children": [
-          "menu-item#mercado",
-          "menu-item#electrohogar",
-          "menu-item#bebidas",
-          "menu-item#cuidado",
-          "menu-item#limpieza",
-          "menu-item#bebes",
-          "menu-item#salud"
-        ]
-    },
-    "menu-item#mercado": {
-        "props": {
-            "text": "Mercado"
-        },
-        "blocks": [
-            "vtex.menu@2.x:submenu#mercado"
-        ]
-    },
-    "vtex.menu@2.x:submenu#mercado": {
+        "blocks": ["vtex.menu@2.x:submenu#category"]
+      },
+      "vtex.menu@2.x:submenu#category": {
         "props": {
             "width": "auto"
           },
-          "children": [
-            "vtex.menu@2.x:menu#category-mercado"
+          "children": ["vtex.menu@2.x:menu#categories"]
+      },
+      "vtex.menu@2.x:menu#categories": {
+        "props": {
+          "orientation": "vertical",
+          "items": [
+              {
+                "id": "menu-item-mercado",
+                "type": "custom",
+                "iconId": null,
+                "highlight": false,
+                "itemProps": {
+                    "type": "internal",
+                    "href": "#",
+                    "noFollow": true,
+                    "tagTitle": "Mercado",
+                    "text": "Mercado"
+                }
+              },
+              {
+                "id": "menu-item-electrohogar",
+                "type": "custom",
+                "iconId": null,
+                "highlight": false,
+                "itemProps": {
+                    "type": "internal",
+                    "href": "#",
+                    "noFollow": true,
+                    "tagTitle": "Electrohogar",
+                    "text": "Electrohogar"
+                }
+              },
+              {
+                "id": "menu-item-bebidas",
+                "type": "custom",
+                "iconId": null,
+                "highlight": false,
+                "itemProps": {
+                    "type": "internal",
+                    "href": "#",
+                    "noFollow": true,
+                    "tagTitle": "Bebidas",
+                    "text": "Bebidas"
+                }
+              },
+              {
+                "id": "menu-item-cuidado",
+                "type": "custom",
+                "iconId": null,
+                "highlight": false,
+                "itemProps": {
+                    "type": "internal",
+                    "href": "#",
+                    "noFollow": true,
+                    "tagTitle": "Cuidado personal",
+                    "text": "Cuidado personal"
+                }
+              },
+              {
+                "id": "menu-item-limpieza",
+                "type": "custom",
+                "iconId": null,
+                "highlight": false,
+                "itemProps": {
+                    "type": "internal",
+                    "href": "#",
+                    "noFollow": true,
+                    "tagTitle": "Limpieza",
+                    "text": "Limpieza"
+                }
+              },
+              {
+                "id": "menu-item-bebes",
+                "type": "custom",
+                "iconId": null,
+                "highlight": false,
+                "itemProps": {
+                    "type": "internal",
+                    "href": "#",
+                    "noFollow": true,
+                    "tagTitle": "Bebes y Niños",
+                    "text": "Bebes y Niños"
+                }
+              },
+              {
+                "id": "menu-item-salud",
+                "type": "custom",
+                "iconId": null,
+                "highlight": false,
+                "itemProps": {
+                    "type": "internal",
+                    "href": "#",
+                    "noFollow": true,
+                    "tagTitle": "Salud y Belleza",
+                    "text": "Salud y Belleza"
+                }
+              },
+              {
+                "id": "menu-item-mascotas",
+                "type": "custom",
+                "iconId": null,
+                "highlight": false,
+                "itemProps": {
+                    "type": "internal",
+                    "href": "#",
+                    "noFollow": true,
+                    "tagTitle": "Mascotas",
+                    "text": "Mascotas"
+                }
+              }
           ]
-    },
-    "vtex.menu@2.x:menu#category-mercado":{
-        "props": {
-            "orientation": "horizontal"
-          },
-          "children": [
-            "menu-item#desayuno",
-            "menu-item#despensa",
-            "menu-item#snack"
-          ]
-    },
-    "menu-item#desayuno": {
-        "props": {
-            "text": "Desayuno"
         }
-    },
-    "menu-item#despensa": {
-        "props": {
-            "text": "Despensa"
-        }
-    },
-    "menu-item#snack": {
-        "props": {
-            "text": "Dulces y Snack"
-        }
-    },
-    "menu-item#electrohogar": {
-        "props": {
-            "text": "Electrohogar"
-        }
-    },
-    "menu-item#bebidas": {
-        "props": {
-            "text": "Bebidas"
-        }
-    },
-    "menu-item#cuidado": {
-        "props": {
-            "text": "Cuidado Personal"
-        }
-    },
-    "menu-item#limpieza": {
-        "props": {
-            "text": "Limpieza"
-        }
-    },
-    "menu-item#bebes": {
-        "props": {
-            "text": "Bebes y Niños"
-        }
-    },
-    "menu-item#salud": {
-        "props": {
-            "text": "Salud y Belleza"
-        }
-    },
-    "menu-item#todos": {
-        "props": {
-              "text": "Todos"
-            }
-    },
-    "menu-item#desde": {
-        "props": {
-              "text": "Desde 70%"
-            }
-    },
-    "menu-item#ultima": {
-        "props": {
-              "text": "Última oportunidad"
-            }
-    },
-    "menu-item#modelos": {
-        "props": {
-              "text": "Modelo sostenible"
-            }
-    }
+      }
 }
