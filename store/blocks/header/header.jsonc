@@ -60,9 +60,8 @@
     }
   },
   "flex-layout.col#header-minicart" : {
-    "children": ["flex-layout.col#minicart", "flex-layout.col#minicart-two"],
+    "children": ["rich-text#hola"],
     "props": {
-      "verticalAlign": "middle",
       "width": "22%",
       "blockClass": "col-burbuja"
     }
@@ -86,6 +85,11 @@
       "placeholder": "¿Qué producto buscas?"
     }
   },
+  "rich-text#hola":{
+    "props":{
+      "text":"ACTUALMENTE"
+    }
+  },
   "flex-layout.col#minicart": {
     "children":["flex-layout.row#minicart"]
   },
@@ -94,7 +98,7 @@
   },
   "flex-layout.col#cart": {
     "children":["minicart.v2"]
-  },
+  }/*,
   "flex-layout.col#minicart-two": {
     "children":["flex-layout.row#minicart-two"]
   },
@@ -103,7 +107,7 @@
   },
   "flex-layout.col#cart-two": {
     "children":["minicart.v2"]
-  }
+  }*/
   /*"flex-layout.row#4-desktop": {
     "props": {
       "blockClass": "main-header",

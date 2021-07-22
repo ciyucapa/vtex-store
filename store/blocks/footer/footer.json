@@ -162,7 +162,7 @@
     }
   },
   "flex-layout.row#aenor": {
-    "children":["image#aenor-one", "image#aenor-two", "image#aenor-three" ],
+    "children":["image#aenor-one", "image#aenor-two", "image#aenor-three", "image#huella" ],
     "props": {
       "blockClass": "aenor"
     }
@@ -170,25 +170,29 @@
   "image#aenor-one": {
     "props": {
       "src": "https://sugoco.vtexassets.com/arquivos/iso_1-v2.png",
-      "blockClass": "aenor-image"
+      "blockClass": "aenor-image",
+      "maxHeight": 60
     }
   },
   "image#aenor-two": {
     "props": {
       "src": "https://sugoco.vtexassets.com/arquivos/iso_2-v2.png",
-      "blockClass": "aenor-image"
+      "blockClass": "aenor-image",
+      "maxHeight": 60
     }
   },
   "image#aenor-three": {
     "props": {
       "src": "https://sugoco.vtexassets.com/arquivos/iso_3-v2.png",
-      "blockClass": "aenor-image"
+      "blockClass": "aenor-image",
+      "maxHeight": 60
     }
   },
   "image#huella": {
     "props": {
       "src": "https://sugoco.vtexassets.com/arquivos/iso_4-v2.png",
-      "blockClass": "huella-image"
+      "blockClass": "huella-image",
+      "maxHeight": 95
     }
   },
 

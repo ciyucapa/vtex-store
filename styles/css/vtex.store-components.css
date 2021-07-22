@@ -110,16 +110,14 @@
  }
  
 .imageElement--aenor-image {
-  height: 60px;
+  margin-right: 16px;
 }
 
 .imageElement--huella-image {
-  height: 95px;
+ margin-top: -33px;
+ margin-right: 16px;
 }
 
-.imageElement--visa-image {
-  height: 20px;
-}
 
 .imageElement--mastercard-image {
   height: 44px;

@@ -172,7 +172,8 @@
 }
 
 .flexRow--aenor {
- background-color: red;
+padding-left: 100px;
+padding-bottom: 40px;
 }
 
 .flexCol--col-search {
@@ -189,11 +190,10 @@
  justify-content: space-between;
 }
 
-/*VOY X ACA*/
-.flexCol-col-burburja {
+.flexCol--col-burbuja {
   overflow: hidden;
-  height: 100%;
-  position: relative;
+    height: 100%;
+    position: relative;
 }
 
 .flexColChild--col-burbuja {
@@ -202,7 +202,7 @@
   position: absolute;
   right: 0;
   top: -60px;
-  background: #475be0;
+  background: red;
   color: #fff;
   border-top-left-radius: 100%;
   border-bottom-left-radius: 100%;
