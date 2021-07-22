@@ -14,17 +14,30 @@
     "props": {
       "blockClass": "sticky-header"
     },
-    "children": ["rich-text#header", "flex-layout.row#header-one"]
+    "children": ["flex-layout.row#header-one", "flex-layout.row#header-two"]
   },
   "flex-layout.row#header-one": {
     "props": {
-      "width": "grow"
+      "fullWidth": true,
+      "horizontalAlign": "center",
+      "blockClass":"header-rich"
+    },
+    "children": ["flex-layout.col#header-one"]
+  },
+  "flex-layout.col#header-one": {
+    "children":["rich-text#header"]
+  },
+  "flex-layout.row#header-two": {
+    "props": {
+      "fullWidth": true,
+      "horizontalAlign": "center",
+      "blockClass":"header-one"
     },
     "children": ["flex-layout.col#header-logo", "flex-layout.col#header-search", "flex-layout.col#header-minicart"]
   },
   "rich-text#header":{
     "props": {
-      "text": "**ACTUALMENTE SÓLO REALIZAMOS** [ENVÍOS A BOGOTÁ.]() **RECIBE TU PEDIDO EN** [HASTA EN 2 DÍAS HÁBILES.]()",
+      "text": "ACTUALMENTE SÓLO REALIZAMOS [ENVÍOS A BOGOTÁ.]() RECIBE TU PEDIDO EN [HASTA EN 2 DÍAS HÁBILES.]()",
       "textAlignment": "CENTER",
       "textPosition": "CENTER",
       "blockClass": "header"
@@ -35,22 +48,23 @@
     "props": {
       "verticalAlign": "middle",
       "width": "18%",
-      "horizontalAlign": "center",
-      "blockClass": "col-logo"
+      "blockClass": "col-logo",
+      "horizontalAlign":"center"
     }
   },
   "flex-layout.col#header-search" : {
-    "children": ["search-bar#header", "vtex.menu@2.x:menu#menu-sugo"],
+    "children": ["flex-layout.row#search", "flex-layout.row#menu"],
     "props": {
-      "verticalAlign": "middle",
-      "width": "60%"
+      "width": "60%",
+      "blockClass": "col-search"
     }
   },
   "flex-layout.col#header-minicart" : {
-    "children": ["minicart.v2"],
+    "children": ["flex-layout.col#minicart", "flex-layout.col#minicart-two"],
     "props": {
       "verticalAlign": "middle",
-      "width": "22%"
+      "width": "22%",
+      "blockClass": "col-burbuja"
     }
   },
   "logo#desktop": {
@@ -58,13 +72,37 @@
       "title": "Logo",
       "href": "/",
       "url": "https://sugoco.vtexassets.com/assets/vtex/assets-builder/sugoco.sugoco-theme/4.0.3/globals/main-logo-normal___f1229d4b1cb0934047638da289a11cab.svg",
-      "width": "100"
+      "width": "110"
     }
+  },
+  "flex-layout.row#search": {
+    "children":["search-bar#header"]
+  },
+  "flex-layout.row#menu": {
+    "children":["vtex.menu@2.x:menu#menu-sugo"]
   },
   "search-bar#header":{
     "props":{
       "placeholder": "¿Qué producto buscas?"
     }
+  },
+  "flex-layout.col#minicart": {
+    "children":["flex-layout.row#minicart"]
+  },
+  "flex-layout.row#minicart": {
+    "children":["flex-layout.col#cart"]
+  },
+  "flex-layout.col#cart": {
+    "children":["minicart.v2"]
+  },
+  "flex-layout.col#minicart-two": {
+    "children":["flex-layout.row#minicart-two"]
+  },
+  "flex-layout.row#minicart-two": {
+    "children":["flex-layout.col#cart-two"]
+  },
+  "flex-layout.col#cart-two": {
+    "children":["minicart.v2"]
   }
   /*"flex-layout.row#4-desktop": {
     "props": {
@@ -96,11 +134,12 @@
       "width": "60"
     }
   },
-  "search-bar":{
+   "search-bar#header-mobile":{
     "props":{
-      "placeholder": "¿Qué producto buscas?"
+      "placeholder": "¿Qué producto buscas?",
+      "hasIconLeft": true
     }
-  },
+  }
   "flex-layout.col#minicart": {
     "children":["minicart.v2"],
     "props": {
@@ -116,7 +155,7 @@
   "flex-layout.row#1-mobile": {
     "children": [
       "logo#mobile",
-      "search-bar",
+       "search-bar#header-mobile",
       "drawer",
       "minicart.v2"
     ],

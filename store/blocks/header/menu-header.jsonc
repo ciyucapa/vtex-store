@@ -11,7 +11,7 @@
                 "highlight": false,
                 "itemProps": {
                     "type": "internal",
-                    "href": "#",
+                    "href": "/",
                     "noFollow": true,
                     "tagTitle": "Todos",
                     "text": "Todos"
@@ -24,7 +24,7 @@
                 "highlight": false,
                 "itemProps": {
                     "type": "internal",
-                    "href": "#",
+                    "href": "/",
                     "noFollow": true,
                     "tagTitle": "Desde 70%",
                     "text": "Desde 70%"
@@ -37,7 +37,7 @@
                 "highlight": false,
                 "itemProps": {
                     "type": "internal",
-                    "href": "#",
+                    "href": "/",
                     "noFollow": true,
                     "tagTitle": "Última oportunidad",
                     "text": "Última oportunidad"
@@ -50,7 +50,7 @@
                 "highlight": false,
                 "itemProps": {
                     "type": "internal",
-                    "href": "#",
+                    "href": "/",
                     "noFollow": true,
                     "tagTitle": "Modelo sostenible",
                     "text": "Modelo sostenible"
@@ -62,6 +62,7 @@
     },
     "menu-item#categories": {
         "props": {
+          "blockClass": "menu-categories",
           "id": "menu-item-categories",
           "type": "custom",
           "iconId": {
@@ -96,7 +97,7 @@
                 "highlight": false,
                 "itemProps": {
                     "type": "internal",
-                    "href": "#",
+                    "href": "/",
                     "noFollow": true,
                     "tagTitle": "Mercado",
                     "text": "Mercado"
@@ -109,7 +110,7 @@
                 "highlight": false,
                 "itemProps": {
                     "type": "internal",
-                    "href": "#",
+                    "href": "/",
                     "noFollow": true,
                     "tagTitle": "Electrohogar",
                     "text": "Electrohogar"
@@ -122,7 +123,7 @@
                 "highlight": false,
                 "itemProps": {
                     "type": "internal",
-                    "href": "#",
+                    "href": "/",
                     "noFollow": true,
                     "tagTitle": "Bebidas",
                     "text": "Bebidas"
@@ -135,7 +136,7 @@
                 "highlight": false,
                 "itemProps": {
                     "type": "internal",
-                    "href": "#",
+                    "href": "/",
                     "noFollow": true,
                     "tagTitle": "Cuidado personal",
                     "text": "Cuidado personal"
@@ -148,7 +149,7 @@
                 "highlight": false,
                 "itemProps": {
                     "type": "internal",
-                    "href": "#",
+                    "href": "/",
                     "noFollow": true,
                     "tagTitle": "Limpieza",
                     "text": "Limpieza"
@@ -161,7 +162,7 @@
                 "highlight": false,
                 "itemProps": {
                     "type": "internal",
-                    "href": "#",
+                    "href": "/",
                     "noFollow": true,
                     "tagTitle": "Bebes y Niños",
                     "text": "Bebes y Niños"
@@ -174,7 +175,7 @@
                 "highlight": false,
                 "itemProps": {
                     "type": "internal",
-                    "href": "#",
+                    "href": "/",
                     "noFollow": true,
                     "tagTitle": "Salud y Belleza",
                     "text": "Salud y Belleza"
@@ -187,7 +188,7 @@
                 "highlight": false,
                 "itemProps": {
                     "type": "internal",
-                    "href": "#",
+                    "href": "/",
                     "noFollow": true,
                     "tagTitle": "Mascotas",
                     "text": "Mascotas"

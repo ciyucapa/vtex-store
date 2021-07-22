@@ -174,3 +174,39 @@
 .flexRow--aenor {
  background-color: red;
 }
+
+.flexCol--col-search {
+  max-width: 800px;
+}
+
+.flexRow--header-rich{
+  background-color: #d3eac0;
+}
+
+.flexRowContent--header-one{
+ background-color: #fff;
+ min-height: 100px;
+ justify-content: space-between;
+}
+
+/*VOY X ACA*/
+.flexCol-col-burburja {
+  overflow: hidden;
+  height: 100%;
+  position: relative;
+}
+
+.flexColChild--col-burbuja {
+  height: calc(100% + 100px)!important;
+  max-height: none;
+  position: absolute;
+  right: 0;
+  top: -60px;
+  background: #475be0;
+  color: #fff;
+  border-top-left-radius: 100%;
+  border-bottom-left-radius: 100%;
+  padding-top: 70px;
+  padding-bottom: 52px;
+  min-width: 200px;
+}
