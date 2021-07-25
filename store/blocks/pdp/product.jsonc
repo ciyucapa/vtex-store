@@ -100,6 +100,7 @@
     },
     "children": [
       "flex-layout.row#product-name",
+      "tag-app",
       "prueba-app#pum",
       "product-rating-summary",
       "flex-layout.row#list-price-savings",

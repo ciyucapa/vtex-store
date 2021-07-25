@@ -37,7 +37,7 @@
   },
   "rich-text#header":{
     "props": {
-      "text": "ACTUALMENTE SÓLO REALIZAMOS [ENVÍOS A BOGOTÁ.]() RECIBE TU PEDIDO EN [HASTA EN 2 DÍAS HÁBILES.]()",
+      "text": "ACTUALMENTE SÓLO REALIZAMOS [ENVÍOS A BOGOTÁ.]() RECIBE TU PEDIDO EN [HASTA EN 3 DÍAS HÁBILES.]()",
       "textAlignment": "CENTER",
       "textPosition": "CENTER",
       "blockClass": "header"
@@ -98,7 +98,7 @@
   },
   "flex-layout.col#cart": {
     "children":["minicart.v2"]
-  }/*,
+  },/*,
   "flex-layout.col#minicart-two": {
     "children":["flex-layout.row#minicart-two"]
   },
@@ -138,20 +138,24 @@
       "width": "60"
     }
   },
-   "search-bar#header-mobile":{
-    "props":{
-      "placeholder": "¿Qué producto buscas?",
-      "hasIconLeft": true
-    }
-  }
+
   "flex-layout.col#minicart": {
     "children":["minicart.v2"],
     "props": {
       "width": "22"
     }
-  },
+  },*/
   "header-layout.mobile": {
-    "children": ["rich-text#header","sticky-layout#1-mobile"]
+    "children": ["flex-layout.row#0-mobile", "sticky-layout#1-mobile"]
+  },
+  "flex-layout.row#0-mobile": {
+    "children":["flex-layout.col#mobile-rich"],
+    "props":{
+      "blockClass":"header-mobile-rich"
+    }
+  },
+  "flex-layout.col#mobile-rich": {
+    "children":["rich-text#header"]
   },
   "sticky-layout#1-mobile": {
     "children": ["flex-layout.row#1-mobile"]
@@ -192,5 +196,11 @@
       "url": "https://sugoco.vtexassets.com/assets/vtex/assets-builder/sugoco.sugoco-theme/4.0.3/globals/main-logo-normal___f1229d4b1cb0934047638da289a11cab.svg",
       "width": "60"
     }
-  }*/
+  },
+  "search-bar#header-mobile":{
+    "props":{
+      "placeholder": "¿Qué producto buscas?",
+      "hasIconLeft": true
+    }
+  }
 }

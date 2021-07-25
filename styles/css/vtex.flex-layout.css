@@ -173,7 +173,6 @@
 
 .flexRow--aenor {
 padding-left: 100px;
-padding-bottom: 40px;
 }
 
 .flexCol--col-search {
@@ -181,6 +180,11 @@ padding-bottom: 40px;
 }
 
 .flexRow--header-rich{
+  background-color: #d3eac0;
+}
+
+.flexRow--header-mobile-rich {
+  z-index: 1000;
   background-color: #d3eac0;
 }
 
