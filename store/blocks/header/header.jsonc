@@ -37,7 +37,7 @@
   },
   "rich-text#header":{
     "props": {
-      "text": "ACTUALMENTE SÓLO REALIZAMOS [ENVÍOS A BOGOTÁ.]() RECIBE TU PEDIDO EN [HASTA EN 3 DÍAS HÁBILES.]()",
+      "text": "ACTUALMENTE SÓLO REALIZAMOS [ENVÍOS A BOGOTÁ](). RECIBE TU PEDIDO EN [HASTA EN 3 DÍAS HÁBILES]().",
       "textAlignment": "CENTER",
       "textPosition": "CENTER",
       "blockClass": "header"
@@ -60,7 +60,7 @@
     }
   },
   "flex-layout.col#header-minicart" : {
-    "children": ["rich-text#hola"],
+    "children": ["flex-layout.col#header-mini-1" /*"flex-layout.col#header-mini-2"*/],
     "props": {
       "width": "22%",
       "blockClass": "col-burbuja"
@@ -85,11 +85,31 @@
       "placeholder": "¿Qué producto buscas?"
     }
   },
-  "rich-text#hola":{
+  "flex-layout.col#header-mini-1": {
+    "children":["flex-layout.row#mini-1", "flex-layout.row#mini-2"]
+  },
+  "flex-layout.row#mini-1": {
+    "children":["flex-layout.col#col-mini-1"]
+  },
+  "flex-layout.row#mini-2": {
+    "children":["flex-layout.col#mini-new", "flex-layout.col#mini-new-1"]
+  },
+  "flex-layout.col#col-mini-1": {
+    "children":["rich-text#BienvenidoSugo"]
+  },
+  "rich-text#BienvenidoSugo":{
     "props":{
-      "text":"ACTUALMENTE"
+      "text":"¡Bienvenid@ a Sugo!",
+      "blockClass": "header-bienvenido"
     }
   },
+  "flex-layout.col#mini-new":{
+    "children":["minicart.v2"]
+  },
+  "flex-layout.col#mini-new-1":{
+    "children":["minicart.v2"]
+  },
+  /*
   "flex-layout.col#minicart": {
     "children":["flex-layout.row#minicart"]
   },

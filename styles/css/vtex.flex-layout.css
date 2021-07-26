@@ -3,10 +3,6 @@
   padding: 0 0.5rem;
 }
 
-.stretchChildrenWidth--prueba {
-  background-color: violet;
-}
-
 @media screen and (min-width: 40em) {
   .flexRowContent--menu-link,
   .flexRowContent--main-header {
@@ -100,12 +96,24 @@
   background-color: #475be0;
 }
 
-.flexCol--pagos {
+.flexRow--desktop-3 {
+  padding-bottom: 20px;
+  background-color: #475be0;
+}
+
+.flexColChild--footer-pagos {
+  padding-bottom: 4px;
+}
+
+.flexRow--pagos {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
   align-items: center;
-  width: 410px;
+}
+
+.flexRowContent--pagos .stretchChildrenWidth {
+  justify-content: left;
+  align-items: center;
+  width: 15%!important;
 }
 
 .flexCol--footer-two {
@@ -206,7 +214,7 @@ padding-left: 100px;
   position: absolute;
   right: 0;
   top: -60px;
-  background: red;
+  background: #475be0;
   color: #fff;
   border-top-left-radius: 100%;
   border-bottom-left-radius: 100%;

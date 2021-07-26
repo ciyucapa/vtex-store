@@ -1,20 +1,26 @@
 {
   "product-summary.shelf": {
     "children": [
+      "tag-quantity#summary",
       "stack-layout#prodsum",
       "flex-layout.col#productRating",
       "product-summary-space",
       "product-list-price#summary",
       "flex-layout.row#selling-price-savings",
       //"product-installments#summary",
+      "expiration-app#pum",
       "product-summary-name",
-      
+      "expiration-app#date",
       "responsive-layout.desktop#bu",
       "responsive-layout.mobile#bu",
       "product-specification-badges"
     ]
   },
-
+  "tag-quantity#summary":{
+    "props":{
+      "blockClass": "summary"
+    }
+  },
   "flex-layout.col#productRating": {
     "props": {
       "blockClass": "productRating"
@@ -75,6 +81,16 @@
     "props": {
       "blockClass": "summary"
     }
+  },
+  "expiration-app#pum": {
+    "props": {
+      "pums": "CINCO"
+   }
+  },
+  "expiration-app#date": {
+    "props": {
+      "date": "Fecha de vencimiento"
+   }
   },
   "responsive-layout.desktop#bu": {
     "children":["flex-layout.row#button-desktop"]

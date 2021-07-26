@@ -175,12 +175,16 @@
 }
 
 .container--sugo-footer {
+  margin-top: 12px;
+}
+
+.paragraph--sugo-footer {
     font-size: 12px!important;
     color: #9eabf0!important;
     white-space: nowrap;
 }
 
-.container--text-footer {
+.paragraph--text-pago {
   color: #fff;
   font-size: 14px;
 }
@@ -211,6 +215,10 @@
   font-weight: 500;
 }
 
+.container--header-bienvenido{
+  color: #fff;
+}
+
 @media only screen and (min-width: 640px) {
   .container--question .strong {
     font-size: 40px;
@@ -231,4 +239,5 @@
   .container--title .paragraph {
     line-height: 1.3em;
   }
+
 }

@@ -99,9 +99,9 @@
       "rowGap": 0
     },
     "children": [
+      "tag-quantity#product",
       "flex-layout.row#product-name",
-      "tag-app",
-      "prueba-app#pum",
+      "expiration-app#pum-summary",
       "product-rating-summary",
       "flex-layout.row#list-price-savings",
       "flex-layout.row#selling-price",
@@ -109,7 +109,7 @@
       "product-separator",
       "product-identifier.product",
       "sku-selector",
-      "prueba-app#date",
+      "expiration-app#date-summary",
       "product-quantity",
       "product-assembly-options",
       "product-gifts",
@@ -119,7 +119,12 @@
       "share#default"
     ]
   },
-  "prueba-app#date": {
+  "tag-quantity#product":{
+    "props":{
+      "blockClass": "product"
+    }
+  },
+  "expiration-app#date-summary": {
     "props": {
       "date": "Fecha de vencimiento"
    }
@@ -137,7 +142,7 @@
       "showValueNameForImageVariation": true
     }
   },
-  "prueba-app#pum": {
+  "expiration-app#pum-summary": {
     "props": {
       "pums": "CINCO"
    }
