@@ -8,9 +8,9 @@
       "product-list-price#summary",
       "flex-layout.row#selling-price-savings",
       //"product-installments#summary",
-      "expiration-app#pum",
+      "expiration-pum-app#pum",
       "product-summary-name",
-      "expiration-app#date",
+      "expiration-pum-app#expiration",
       "responsive-layout.desktop#bu",
       "responsive-layout.mobile#bu",
       "product-specification-badges"
@@ -82,14 +82,16 @@
       "blockClass": "summary"
     }
   },
-  "expiration-app#pum": {
+  "expiration-pum-app#pum": {
     "props": {
-      "pums": "CINCO"
+      "pums": "CINCO",
+      "blockClass": "pum-summary"
    }
   },
-  "expiration-app#date": {
+  "expiration-pum-app#expiration": {
     "props": {
-      "date": "Fecha de vencimiento"
+      "date": "Fecha de vencimiento",
+      "blockClass": "expiration-summary"
    }
   },
   "responsive-layout.desktop#bu": {

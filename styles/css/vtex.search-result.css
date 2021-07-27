@@ -1,3 +1,11 @@
+.searchResultContainer {
+ padding-top: 50px;
+}
+
+.galleryItem--normal {
+ padding-top: 40px;
+}
+
 .galleryLayoutOptionButton {
   background-color: #F0F0F0;
   color: #3F3F40;

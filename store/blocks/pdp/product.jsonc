@@ -101,15 +101,15 @@
     "children": [
       "tag-quantity#product",
       "flex-layout.row#product-name",
-      "expiration-app#pum-summary",
-      "product-rating-summary",
-      "flex-layout.row#list-price-savings",
+      "expiration-pum-app#pum-summary",
+      //"product-rating-summary",
+      //"flex-layout.row#list-price-savings",
       "flex-layout.row#selling-price",
-      "product-installments",
-      "product-separator",
-      "product-identifier.product",
-      "sku-selector",
-      "expiration-app#date-summary",
+      "product-price-savings#summary",
+      //"product-separator",
+      //"product-identifier.product",
+      //"sku-selector",
+      "expiration-pum-app#date-summary",
       "product-quantity",
       "product-assembly-options",
       "product-gifts",
@@ -124,9 +124,10 @@
       "blockClass": "product"
     }
   },
-  "expiration-app#date-summary": {
+  "expiration-pum-app#date-summary": {
     "props": {
-      "date": "Fecha de vencimiento"
+      "date": "Fecha de vencimiento",
+      "blockClass": "expiration-product"
    }
   },
   "flex-layout.row#product-name": {
@@ -135,16 +136,16 @@
     },
     "children": ["vtex.store-components:product-name"]
   },
-
   "sku-selector": {
     "props": {
       "variationsSpacing": 3,
       "showValueNameForImageVariation": true
     }
   },
-  "expiration-app#pum-summary": {
+  "expiration-pum-app#pum-summary": {
     "props": {
-      "pums": "CINCO"
+      "pums": "CINCO",
+      "blockClass": "pum-product"
    }
   },
   "flex-layout.row#buy-button": {
