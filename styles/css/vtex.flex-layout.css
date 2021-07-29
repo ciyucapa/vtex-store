@@ -170,8 +170,11 @@
 
 .flexRow--cajass {
   background-color: #9eacf0;
-  padding-bottom: 2rem;
-  width: 100%;
+  margin: auto;
+}
+
+.flexRow--cajass .stretchChildrenWidth {
+  margin: auto;
 }
 
 .flexCol--excelencia {
@@ -204,8 +207,8 @@ padding-left: 100px;
 
 .flexCol--col-burbuja {
   overflow: hidden;
-    height: 100%;
-    position: relative;
+  height: 100%;
+  position: relative;
 }
 
 .flexColChild--col-burbuja {
@@ -221,4 +224,8 @@ padding-left: 100px;
   padding-top: 70px;
   padding-bottom: 52px;
   min-width: 200px;
+}
+
+.flexRowContent--row-iconos {
+  justify-content: flex-end;
 }

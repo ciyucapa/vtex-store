@@ -47,7 +47,7 @@
                 "id": "menu-item-modelo",
                 "type": "custom",
                 "iconId": null,
-                "highlight": false,
+                "highlight": true,
                 "itemProps": {
                     "type": "internal",
                     "href": "/",

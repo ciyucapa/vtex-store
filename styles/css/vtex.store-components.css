@@ -70,9 +70,8 @@
   margin-bottom: -6px;
 }
 
-.imageElement--image-licores {
-  height: auto;
-  width: 45%;
+.imageElement--licores {
+  height: auto!important;
 }
 
 .searchIcon {

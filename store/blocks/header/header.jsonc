@@ -60,7 +60,7 @@
     }
   },
   "flex-layout.col#header-minicart" : {
-    "children": ["flex-layout.col#header-mini-1" /*"flex-layout.col#header-mini-2"*/],
+    "children": ["flex-layout.col#header-mini-1"],
     "props": {
       "width": "22%",
       "blockClass": "col-burbuja"
@@ -86,13 +86,19 @@
     }
   },
   "flex-layout.col#header-mini-1": {
-    "children":["flex-layout.row#mini-1", "flex-layout.row#mini-2"]
+    "children":["flex-layout.row#mini-1", "flex-layout.row#mini-2"],
+    "props":{
+      "horizontalAlign":"center"
+    }
   },
   "flex-layout.row#mini-1": {
     "children":["flex-layout.col#col-mini-1"]
   },
   "flex-layout.row#mini-2": {
-    "children":["flex-layout.col#mini-new", "flex-layout.col#mini-new-1"]
+    "children":["flex-layout.col#mini-new", "flex-layout.col#mini-new-1"],
+    "props":{
+      "blockClass":"row-iconos"
+    }
   },
   "flex-layout.col#col-mini-1": {
     "children":["rich-text#BienvenidoSugo"]
@@ -104,10 +110,23 @@
     }
   },
   "flex-layout.col#mini-new":{
-    "children":["minicart.v2"]
+    "children":["minicart.v2"],
+    "props":{
+      "blockClass": "row-iconos-one"
+    }
   },
   "flex-layout.col#mini-new-1":{
-    "children":["minicart.v2"]
+    "children":["minicart.v2#header"],
+    "props":{
+      "blockClass": "row-iconos-two"
+    }
+  },
+  "minicart.v2#header": {
+    "props": {
+      "variation": "popup",
+      "drawerSlideDirection": "rightToLeft",
+      "itemCountMode": "total"
+    }
   },
   /*
   "flex-layout.col#minicart": {
