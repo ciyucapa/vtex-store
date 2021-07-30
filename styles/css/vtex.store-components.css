@@ -65,9 +65,10 @@
   margin: 1rem 0;
 }
 
-.imageElement--image-curva {
+.imageElement--image-curva-footer {
   width: 100%;
   margin-bottom: -6px;
+  margin-top: 30px;
 }
 
 .imageElement--licores {
@@ -95,67 +96,14 @@
  }
 
 .searchBarInnerContainer :global(.vtex-styleguide-9-x-input),
-.searchBarInnerContainer :global(.vtex-store-components-3-x-searchBarIcon),
-.searchBarInnerContainer :global(.vtex-store-components-3-x-searchBarInnerContainer),
-.searchBarInnerContainer :global(.vtex-input__suffix),
-.searchBarInnerContainer :global(.vtex-input__prefix) {
+:global(.vtex-store-components-3-x-searchBarIcon),
+:global(.vtex-store-components-3-x-searchBarInnerContainer),
+:global(.vtex-input__suffix),
+:global(.vtex-input__prefix) {
   border: 0;
   padding: 0;
   font-size: 14px;
   font-weight: bold;
-}
-
- .logoContainer {
-   padding: 0;
- }
- 
-.imageElement--aenor-image {
-  margin-right: 16px;
-}
-
-.imageElement--huella-image {
- margin-top: -33px;
- margin-right: 16px;
-}
-
-
-.imageElement--mastercard-image {
-  height: 44px;
-}
-
-.imageElement--american-image {
-  height: 26px;
-}
-
-.imageElement--diner-image {
-  height: 33px;
-}
-
-.imageElement--industria-image {
-  height: 45px;
-}
-
-@media only screen and (min-width: 640px) {
-  .newsletter .container {
-    padding: 140px;
-  }
-
-  .label {
-    font-size: 40px;
-  }
-
-  .infoCardContainer--info-card-home .infoCardTextContainer {
-    width: 30%;
-  }
-
-  .infoCardContainer--info-card-home .infoCardImageContainer {
-    width: 70%;
-  }
-
-  .imageElement--storePrint {
-    margin-bottom: 0px;
-    max-height: 600px;
-  }
 }
 
 .productImagesContainer--quickview .carouselContainer {
@@ -181,3 +129,43 @@
   font-weight: bold;
   font-size: 30px;
 }
+
+.container {
+  padding: 0;
+}
+
+.logoContainer--logo-footer-desktop {
+  padding: 0;
+}
+
+@media only screen and (min-width: 640px) {
+  .newsletter .container {
+    padding: 140px;
+  }
+
+  .label {
+    font-size: 40px;
+  }
+
+  .infoCardContainer--info-card-home .infoCardTextContainer {
+    width: 30%;
+  }
+
+  .infoCardContainer--info-card-home .infoCardImageContainer {
+    width: 70%;
+  }
+
+  .imageElement--storePrint {
+    margin-bottom: 0px;
+    max-height: 600px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+
+.container {
+  align-items: center;
+}
+
+}
+  

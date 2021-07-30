@@ -11,88 +11,66 @@
       "flex-layout.row#footer-1-desktop",
       "flex-layout.row#footer-2-desktop",
       "flex-layout.row#footer-3-desktop"
-    ]
+    ],
+    "props":{
+      "blockClass": "footer-desktop"
+    }
   },
   "image#footer": {
     "props": {
       "src": "https://sugoco.vtexassets.com/arquivos/curva_footer.svg",
-      "blockClass":"image-curva"
+      "blockClass":"image-curva-footer"
     }
   },
   "flex-layout.row#footer-1-desktop": {
-    "children": ["flex-layout.col#footer-one"],
+    "children": ["logo#logo-footer-desktop", "rich-text#text-logo"],
     "props": {
-      "blockClass": "new"
+      "blockClass": "footer-1-desktop",
+      "paddingTop": 5
 
     }
   },
-  "flex-layout.col#footer-one": {
-    "children":[
-      "logo#logo-footer",
-      "rich-text#text-logo"
-    ],
-    "props": {
-      "marginLeft": 9
-    }
-  },
-  "logo#logo-footer": {
+  "logo#logo-footer-desktop": {
     "props": {
       "title": "Logo",
-      "href": "/",
+      "href": "/home",
       "url": "https://sugoco.vtexassets.com/assets/vtex/assets-builder/sugoco.sugoco-theme/4.0.3/globals/main-footer-logo___b10be364fdd8f3c9ab32da3cc6ca61f2.svg",
-      "width": "110"
+      "width": "110",
+      "blockClass": "logo-footer-desktop"
     }
   },
   "rich-text#text-logo": {
     "props":{
-      "text":"La primera tienda sostenible donde ahorrando, \ntambién ayudas al planeta.",
+      "text":"#### La primera tienda sostenible donde ahorrando, también ayudas al planeta.",
       "blockClass": "text-logo"
     }
   },
   "flex-layout.row#footer-2-desktop": {
-    "children": ["flex-layout.col#footer-5-desktop", "flex-layout.col#footer-6-desktop", "flex-layout.col#footer-7-desktop"],
+    "children": ["rich-text#somos", "vtex.menu@2.x:menu#footer-desktop", "image#industria"],
     "props": {
-      "blockClass": "new"
-    }
-  },
-  "flex-layout.col#footer-5-desktop":{
-    "children":["rich-text#somos"],
-    "props": {
-      "marginLeft": 9,
-      "width":"17%"
-    }
-  },
-  "flex-layout.col#footer-6-desktop":{
-    "children":["vtex.menu@2.x:menu#footer-desktop"],
-    "props": {
-      "blockClass": "footer-two",
-      "marginLeft": 7,
-      "width":"54%"
-    }
-  },
-  "flex-layout.col#footer-7-desktop":{
-    "children":["image#industria"],
-    "props": {
-      "blockClass": "footer-three",
-      "width":"31%"
+      "blockClass": "footer-2-desktop",
+      "marginLeft": 9
     }
   },
   "rich-text#somos": {
     "props": {
       "text": "Somos transparentes",
-      "blockClass": "text-footer-somos"
+      "blockClass": "text-footer-somos",
+      "width": "15%"
     }
   },
   "image#industria": {
     "props": {
       "src": "https://sugoco.vtexassets.com/arquivos/superintendencia.png",
+      "link": "/",
+      "maxHeight": 45,
       "blockClass": "industria-image"
     }
   },
   "flex-layout.row#footer-3-desktop": {
     "children": ["flex-layout.col#footer-3-one", "flex-layout.col#foter-3-two"],
     "props": {
-      "blockClass": "desktop-3"
+      "blockClass": "footer-3-desktop"
     }
   },
   "flex-layout.col#footer-3-one":{
@@ -134,25 +112,25 @@
   "image#visa": {
     "props": {
       "src": "https://sugoco.vtexassets.com/assets/vtex/assets-builder/sugoco.sugoco-theme/4.0.3/globals/visa___ba3705d5ddd03e1f4758ba127e779b0e.svg",
-      "blockClass": "visa-image"
+      "height": "20px"
     }
   },
   "image#mastercad": {
     "props": {
       "src": "https://sugoco.vtexassets.com/assets/vtex/assets-builder/sugoco.sugoco-theme/4.0.3/globals/master___466ee8a80a25a547e643b6925bc7599e.svg",
-      "blockClass": "mastercard-image"
+      "height": "44px"
     }
   },
   "image#american": {
     "props": {
       "src": "https://sugoco.vtexassets.com/assets/vtex/assets-builder/sugoco.sugoco-theme/4.0.3/globals/american___a37a61c9f136c029b5d8d71cc6878fe0.svg",
-      "blockClass": "american-image"
+      "height": "26px"
     }
   },
   "image#diner": {
     "props": {
       "src": "https://sugoco.vtexassets.com/assets/vtex/assets-builder/sugoco.sugoco-theme/4.0.3/globals/diners___1fdc888054f802c9ca8736abfaa8d38a.svg",
-      "blockClass": "diner-image"
+      "height": "33px"
     }
   },
   
@@ -200,42 +178,28 @@
   "footer-layout.mobile": {
     "children": [
       "image#footer",
-      "flex-layout.row#1-footer-mobile",
-      "flex-layout.row#2-footer-mobile"
-    ]
-  },
-  "flex-layout.row#2-footer-mobile": {
-    "children": ["flex-layout.col#footer-1-mobile"],
-    "props": {
-      "blockClass": "payment-methods",
-      "paddingTop": 4,
-      "paddingBottom": 4
-    }
-  },
-  "flex-layout.col#footer-1-mobile": {
-    "children": [
-      "accepted-payment-methods",
-      "social-networks",
-      "rich-text#footer-mobile"
+      "flex-layout.row#1-footer-mobile"
     ],
-    "props": {
-      "blockClass": "payment-methods",
-      "paddingTop": 4,
-      "paddingBottom": 4,
-      "rowGap": 4
+    "props":{
+      "blockClass":"footer-mobile"
     }
   },
   "flex-layout.row#1-footer-mobile": {
+    "children": ["logo#logo-footer",
+      "rich-text#text-logo"],
     "props": {
-      "paddingTop": 4,
-      "paddingBottom": 4
-    },
-    "children": ["vtex.menu@2.x:menu#footer-mobile"]
+      "blockClass": "mobile-footer",
+      "paddingBottom": 4,
+      "paddingTop": 4
+    }
   },
-  "rich-text#footer-mobile": {
+  "logo#logo-footer": {
     "props": {
-      "text": "Todos los derechos reservados Real Plaza Go | Empowered by ",
-      "blockClass": "footer"
+      "title": "Logo",
+      "width": "110",
+      "href": "/",
+      "url": "https://sugoco.vtexassets.com/assets/vtex/assets-builder/sugoco.sugoco-theme/4.1.6/globals/main-footer-logo___b10be364fdd8f3c9ab32da3cc6ca61f2.svg",
+      "blockClass": "logo-footer"
     }
   }
 }

@@ -101,15 +101,6 @@
   background-color: #475be0;
 }
 
-.flexColChild--footer-pagos {
-  padding-bottom: 4px;
-}
-
-.flexRow--pagos {
-  display: flex;
-  align-items: center;
-}
-
 .flexRowContent--pagos .stretchChildrenWidth {
   justify-content: left;
   align-items: center;
@@ -177,15 +168,6 @@
   margin: auto;
 }
 
-.flexCol--excelencia {
-  align-items: center;
-  padding-left: 106px;
-}
-
-.flexRow--aenor {
-padding-left: 100px;
-}
-
 .flexCol--col-search {
   max-width: 800px;
 }
@@ -228,4 +210,15 @@ padding-left: 100px;
 
 .flexRowContent--row-iconos {
   justify-content: flex-end;
+}
+
+.flexRow--mobile-footer {
+  background-color: #475be0;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.flexRow--mobile-logo {
+  display: flex;
+  flex-direction: column;
 }

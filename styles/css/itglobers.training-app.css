@@ -1,4 +1,4 @@
-.container-flagLastUnit--summary{
+.container-quantity--summary{
     position: absolute;
     top: 0;
     background-color: #475be0;
@@ -22,7 +22,7 @@
         margin-right: 4px
     }
 
-.container-flagLastUnit--product{
+.container-quantity--product{
     background-color: #475be0;
     width: fit-content;
     border-radius: .7px 22.5px 22.5px .7px;
@@ -52,15 +52,15 @@
     font-size: 10px;
 }
 
-.title-expiration {
-    margin-right: 5px;
-}
+    .title-expiration {
+        margin-right: 5px;
+    }
 
-.box-expiration--expiration-product {
-    font-size: 14px;
-    margin-top: 15px;
-    min-height: 22px;
-}
+    .box-expiration--expiration-product {
+        font-size: 14px;
+        margin-top: 15px;
+        min-height: 22px;
+    }
     
 .box-pum {
     display: flex;

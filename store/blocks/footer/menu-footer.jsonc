@@ -3,6 +3,7 @@
     "props": {
       "orientation": "horizontal",
       "blockClass": "menu-footer",
+      "width": "54%",
       "items": [
         {
           "id": "menu-item-terminos",
@@ -11,7 +12,7 @@
           "highlight": false,
           "itemProps": {
             "type": "internal",
-            "href": "#",
+            "href": "/",
             "noFollow": true,
             "tagTitle": "Terminos y condiciones",
             "text": "Terminos y condiciones"

@@ -9,3 +9,88 @@
 .row--payment-methods {
   padding-top: 16px;
 }
+
+.footerLayout--footer-desktop :global(.vtex-store-components-3-x-logoLink) {
+  margin-bottom: -10px;
+}
+
+.footerLayout--footer-desktop :global(.vtex-flex-layout-0-x-flexRow) {
+  background: #475be0;
+  height: auto;
+  color: #fff;
+}
+
+.footerLayout--footer-desktop :global(.vtex-flex-layout-0-x-flexRowContent--footer-1-desktop) {
+  display: flex;
+  flex-direction: column;
+  padding-left: 66px;
+}
+
+.footerLayout--footer-desktop :global(.vtex-store-components-3-x-logoLink) {
+  margin-bottom: -10px;
+}
+
+.footerLayout--footer-desktop :global(.vtex-flex-layout-0-x-flexRowContent--footer-1-desktop),
+:global(.vtex-flex-layout-0-x-flexRowContent--footer-2-desktop) {
+  padding-left: 66px;
+}
+
+.footerLayout--footer-desktop :global(.vtex-rich-text-0-x-paragraph) {
+  color: #fff;
+  font-size: 14px;
+  font-family: Montserrat-Regular;
+}
+
+.footerLayout--footer-desktop :global(.vtex-menu-2-x-menuContainerNav) {
+  align-items: center;
+  display: flex;
+}
+
+.footerLayout--footer-desktop :global(.vtex-menu-2-x-menuContainer) {
+  justify-content: space-between;
+}
+
+.footerLayout--footer-desktop :global(.vtex-menu-2-x-menuItem) {
+  margin-right: 15px;
+  margin-top: 2px;
+}
+
+.footerLayout--footer-desktop :global(.vtex-menu-2-x-styledLinkContent) {
+  color: #9eabf0;
+  font-size: 12px!important;
+}
+
+.footerLayout--footer-desktop :global(.vtex-store-components-3-x-imageElement--industria-image) {
+  margin-right: auto;
+}
+
+.footerLayout--footer-desktop :global(.vtex-flex-layout-0-x-flexColChild--footer-pagos) {
+  padding-bottom: 4px;
+}
+
+.footerLayout--footer-desktop :global(.vtex-flex-layout-0-x-flexRow--pagos) {
+  display: flex;
+    align-items: center;
+}
+
+.footerLayout--footer-desktop :global(.vtex-flex-layout-0-x-flexCol--excelencia) {
+  align-items: center;
+  padding-left: 106px;
+}
+
+.footerLayout--footer-desktop :global(.vtex-rich-text-0-x-container--excelencia) {
+  margin-top: 37px;
+}
+
+.footerLayout--footer-desktop :global(.vtex-flex-layout-0-x-flexRow--aenor) {
+  padding-left: 105px;
+}
+
+.footerLayout--footer-desktop :global(.vtex-store-components-3-x-imageElement--aenor-image) {
+  margin-right: 16px;
+}
+
+.footerLayout--footer-desktop :global(.vtex-store-components-3-x-imageElement--huella-image) {
+  margin-top: -33px;
+  margin-right: 16px;
+}

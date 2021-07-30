@@ -301,6 +301,8 @@
       "rich-text#destacados",
       "flex-layout.row#shelf",
       "image#curva-arriba",
+      "flex-layout.row#rich-pequeños",
+      "flex-layout.row#slider-pequeños",
       "image#curva-abajo",
       "rich-text#oportunidad",
       "flex-layout.row#shelf-two"

@@ -154,22 +154,15 @@
   font-size: 14px;
 }
 
-.container--text-logo {
+.headingLevel4--text-logo {
   color: #fff;
-  font-weight: 400;
-  font-size: 26px;
   line-height: 30px;
   letter-spacing: .03rem;
+  font-size: 26px;
 }
 
-.container--text-footer-somos {
-  color: #fff;
-  font-size: 14px;
-}
-
-.container--excelencia {
-  color: #fff;
-  font-size: 14px;
+.paragraph--text-footer-somos {
+  padding-bottom: 5px;
 }
 
 .link--sugo-footer {
@@ -185,15 +178,6 @@
     font-size: 12px!important;
     color: #9eabf0!important;
     white-space: nowrap;
-}
-
-.paragraph--text-pago {
-  color: #fff;
-  font-size: 14px;
-}
-
-:global(.vtex-rich-text-0-x-container--excelencia) {
- margin-top: 37px;
 }
 
 .paragraph--small{
