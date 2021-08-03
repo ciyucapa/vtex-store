@@ -1,7 +1,13 @@
 
 .buttonText {
     text-transform: capitalize;
-    /*font-family: Montserrat-Regular;*/
     font-size: .875rem;
     letter-spacing: 0;
+}
+
+.buttonDataContainer--button-wishlist {
+   font-size: 12px;
+   font-weight: bold;
+   color: #fff;
+   line-height: 1.25;
 }

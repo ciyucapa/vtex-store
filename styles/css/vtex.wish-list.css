@@ -1,0 +1,49 @@
+
+.outline, .fill {
+    background: transparent;
+}
+
+.wishlistIconContainer--wishlist-product :global(.vtex-wish-list-1-x-fill)::before,
+.wishlistIconContainer--wishlist-product :global(.vtex-wish-list-1-x-outline)::before {
+    content: "Add To Wish List";
+    text-transform: capitalize;
+    color:#4d4d4d;
+    font-size: 14px;
+    font-weight: bold;
+}
+/*
+.wishlistIconContainer--wishlist-product :global(.vtex-wish-list-1-x-fill)::before {
+    content: "Add To Wish List";
+    text-transform: capitalize;
+    color:#4d4d4d;
+    font-size: 14px;
+    font-weight: bold;
+}*/
+
+.wishlistIconContainer--wishlist-product :global(.vtex-wish-list-1-x-fill):hover,
+.wishlistIconContainer--wishlist-product :global(.vtex-wish-list-1-x-outline):hover{
+    text-decoration: underline #4d4d4d;
+}
+
+.wishlistIcon--wishlist-product {
+    width: 100%;
+}
+
+.wishlistIconContainer--wishlist-product {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.wishlistIconContainer--account-wishlist :global(.vtex-wish-list-1-x-fill)::before,
+.wishlistIconContainer--account-wishlist :global(.vtex-wish-list-1-x-outline)::before {
+    content: "x";
+    text-transform:lowercase;
+    color:gray;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.wishlistIconContainer--account-wishlist :global(.vtex-button), 
+.wishlistIconContainer--wishlist-product :global(.vtex-button) {
+    padding: 0 !important;
+}

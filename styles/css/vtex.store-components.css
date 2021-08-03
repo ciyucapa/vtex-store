@@ -71,6 +71,11 @@
   margin-top: 30px;
 }
 
+.imageElement--image-curva {
+  width: 100%;
+  margin-bottom: -6px;
+}
+
 .imageElement--licores {
   height: auto!important;
 }

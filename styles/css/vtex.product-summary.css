@@ -21,11 +21,9 @@
   justify-content: start;
   padding-top: 1rem;
   padding-bottom: 1rem;
-  
 }
 
 .brandName {
-  font-weight: 900;
   font-size: .75rem;
   color: #82878a;
   font-family: "Montserrat-Regular";
@@ -50,7 +48,7 @@
   max-height: 200px;
 }
 
-.element {
+.element--home {
   background-color: #fff;
   max-width: 220px!important;
   margin: 0 auto;
@@ -62,9 +60,45 @@
   padding: 40px 0px;
 }
 
- .clearLink {
-   border-radius: 5px;
-   background-color: #fff;
-   margin-left: 10px;
-   margin-right: 10px;
- }
+.clearLink-home {
+  border-radius: 5px;
+  background-color: #fff;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.container--wishlist {
+  max-width: 100% !important;
+}
+
+.element--wishlist {
+  padding-bottom: 20px;
+  padding-top: 0;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.imageContainer--image-wishlist {
+  max-width: 100px;
+}
+
+.productBrandContainer--brand-wishlist {
+  font-size: 12px;
+  font-weight: bold;
+  text-align: start;
+}
+
+.productNameContainer--name-wishlist {
+  min-height: 75px;
+}
+
+.brandName--name-wishlist {
+  font-size: 16px;
+  color: #010101;
+  text-transform: capitalize;
+}
+
+.brandName--name-wishlist:hover {
+  text-decoration: underline #010101;
+}
+

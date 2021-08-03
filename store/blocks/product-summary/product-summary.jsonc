@@ -14,7 +14,10 @@
       "responsive-layout.desktop#bu",
       "responsive-layout.mobile#bu",
       "product-specification-badges"
-    ]
+    ],
+    "props":{
+      "blockClass": "home"
+    }
   },
   "tag-quantity#summary":{
     "props":{

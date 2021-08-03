@@ -65,7 +65,7 @@
           "blockClass": "menu-categories",
           "id": "menu-item-categories",
           "type": "custom",
-          "iconId": {
+          "iconProps": {
               "id": "nav-caret--down"
           },
           "iconPosition": "right",

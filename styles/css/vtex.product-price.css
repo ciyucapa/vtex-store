@@ -86,3 +86,14 @@
   color: #475be0;
   font-size: 18px;
 }
+
+.currencyContainer--price-wishlist {
+  font-size: 14px;
+  font-weight: bold;
+  color: #010101;
+}
+
+.currencyContainer--wishlist-listPrice {
+  font-size: 14px;
+  color:#767676;
+}

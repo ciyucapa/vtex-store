@@ -6,11 +6,28 @@
       "flex-layout.row#description",
       "flex-layout.row#specifications-title",
       "product-specification-group#table",
+      "flex-layout.row#form",
       "shelf.relatedProducts",
       "product-reviews",
       "product-questions-and-answers"
     ]
   },
+  "flex-layout.row#form": {
+      "children": [
+        "flex-layout.col#form"
+      ]
+    },
+    "flex-layout.col#form": {
+      "children": [
+        "form"
+      ]
+    },
+    "form": {
+      "props": {
+        "entity": "EA",
+        "schema": "equipoalpha"
+      }
+    },
   "flex-layout.row#specifications-title": {
     "children": ["rich-text#specifications"]
   },
@@ -114,8 +131,9 @@
       "product-assembly-options",
       "product-gifts",
       "flex-layout.row#buy-button",
-      "availability-subscriber",
-      "shipping-simulator",
+      "add-to-list-btn#wishlist",
+      //"availability-subscriber",
+      //"shipping-simulator",
       "share#default"
     ]
   },
@@ -155,7 +173,11 @@
     },
     "children": ["add-to-cart-button"]
   },
-
+  "add-to-list-btn#wishlist": {
+    "props":{
+      "blockClass": "wishlist-product"
+    }
+  },
   "flex-layout.row#product-availability": {
     "props": {
       "colGap": 7,
