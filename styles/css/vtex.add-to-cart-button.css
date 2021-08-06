@@ -1,9 +1,32 @@
+/*product-summary*/
 
-.buttonText {
+.buttonText--button-summary {
     text-transform: capitalize;
     font-size: .875rem;
     letter-spacing: 0;
 }
+
+.buttonDataContainer--addButton-mobile {
+    position: relative;
+ }
+
+ .buttonDataContainer--addButton-mobile::before {
+    font-family: icomoon;
+    content: "\e92d";
+    font-size: 1rem;
+    color: #475be0 !important; 
+    text-indent: 0;
+    display: block;
+    position: absolute;
+ }
+
+ .buttonText--addButton-mobile {
+     font-size: 0;
+ }
+
+/*end product-summary*/
+
+/*wishlist*/
 
 .buttonDataContainer--button-wishlist {
    font-size: 12px;
@@ -11,3 +34,17 @@
    color: #fff;
    line-height: 1.25;
 }
+
+/*end wishlist*/
+
+/*product*/
+
+.buttonText--button-product {
+    font-size: 1rem;
+    letter-spacing: .03em;
+    text-transform: none;
+    font-family: Montserrat-Regular;
+    font-weight: 600;
+}
+
+/*end product*/

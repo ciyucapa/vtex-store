@@ -11,14 +11,6 @@
     font-size: 14px;
     font-weight: bold;
 }
-/*
-.wishlistIconContainer--wishlist-product :global(.vtex-wish-list-1-x-fill)::before {
-    content: "Add To Wish List";
-    text-transform: capitalize;
-    color:#4d4d4d;
-    font-size: 14px;
-    font-weight: bold;
-}*/
 
 .wishlistIconContainer--wishlist-product :global(.vtex-wish-list-1-x-fill):hover,
 .wishlistIconContainer--wishlist-product :global(.vtex-wish-list-1-x-outline):hover{

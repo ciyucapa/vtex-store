@@ -5,7 +5,6 @@
       "responsive-layout.mobile"
     ]
   },
-  
   "responsive-layout.desktop": {
     "children":[
       "list-context.image-list#sugo",

@@ -10,9 +10,9 @@
   text-align: center;
 }
 
-.headingLevel2--shelfTitle {
-  font-weight: 200;
-}
+  .headingLevel2--shelfTitle {
+    font-weight: 200;
+  }
 
 .container--deals .paragraph {
   margin: 0;
@@ -57,56 +57,56 @@
   color: #fff;
 }
 
-.strong--text-one {
-  position: relative;
-}
+  .strong--text-one {
+    position: relative;
+  }
 
-.strong--text-one::after {
-  content: "";
-  bottom: -2px;
-  left: 0;
-  right: 0;
-  position: absolute;
-  height: 5px;
-  background-color: #61C800;
-}
+  .strong--text-one::after {
+    content: "";
+    bottom: -2px;
+    left: 0;
+    right: 0;
+    position: absolute;
+    height: 5px;
+    background-color: #61C800;
+  }
 
-.heading--text-one {
-  margin: 30px 0 0;
-}
+  .heading--text-one {
+    margin: 30px 0 0;
+  }
 
 .container--header {
   font-size: .75rem;
 }
 
-.wrapper--header {
-  font-family: Montserrat-SemiBold;
-  font-weight: 600;
-}
+  .wrapper--header {
+    font-family: Montserrat-SemiBold;
+    font-weight: 600;
+  }
 
-.paragraph--header {
-  margin: 10px;
-    letter-spacing: .5px;
-}
+  .paragraph--header {
+    margin: 10px;
+      letter-spacing: .5px;
+  }
 
-.link--header {
-  text-decoration: none;
-    font-family: Montserrat-Bold;
-    font-weight: 900;
-    position: relative;
-    color: #475be0;
-    pointer-events: none;
-}
+  .link--header {
+    text-decoration: none;
+      font-family: Montserrat-Bold;
+      font-weight: 900;
+      position: relative;
+      color: #475be0;
+      pointer-events: none;
+  }
 
-.link--header::after {
-  content: "";
-    bottom: -2px;
-    left: 0;
-    right: 0;
-    position: absolute;
-    height: 3px;
-    background-color: #61c800;
-}
+  .link--header::after {
+    content: "";
+      bottom: -2px;
+      left: 0;
+      right: 0;
+      position: absolute;
+      height: 3px;
+      background-color: #61c800;
+  }
 
 .container--question .paragraph {
   text-align: center;
@@ -116,11 +116,11 @@
   color: #03034E;
 }
 
-.container--question .strong {
-  font-size: 32px;
-  line-height: 2rem;
-  font-weight: 700;
-}
+  .container--question .strong {
+    font-size: 32px;
+    line-height: 2rem;
+    font-weight: 700;
+  }
 
 .container--link .paragraph {
   text-align: center;
@@ -130,18 +130,18 @@
   color: #03034E;
 }
 
-.container--link .strong {
-  font-size: 16px;
-  font-weight: 700;
-  text-transform: uppercase;
-}
+  .container--link .strong {
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
 
-.container--link .link {
-  text-decoration: none;
-  font-size: 36px;
-  font-weight: 300;
-  color: #475be9;
-}
+  .container--link .link {
+    text-decoration: none;
+    font-size: 36px;
+    font-weight: 300;
+    color: #475be9;
+  }
 
 .container--title {
   color: #03034E;
@@ -170,15 +170,15 @@
   text-decoration: none;
 }
 
-.container--sugo-footer {
-  margin-top: 12px;
-}
+  .container--sugo-footer {
+    margin-top: 12px;
+  }
 
-.paragraph--sugo-footer {
-    font-size: 12px!important;
-    color: #9eabf0!important;
-    white-space: nowrap;
-}
+  .paragraph--sugo-footer {
+      font-size: 12px!important;
+      color: #9eabf0!important;
+      white-space: nowrap;
+  }
 
 .paragraph--small{
   color: #92989b;
@@ -189,18 +189,18 @@
   margin-bottom: 30px;
   font-size: .75rem;
 }
-.paragraph--small::before{
-  font-family: icomoon;
-  content: "\e935";
-  font-size: 1.5rem;
-  text-indent: 0;
-  display: block;
-  position: absolute;
-  top: -3px;
-  left: -31px;
-  color: #7ecb34!important;
-  font-weight: 500;
-}
+  .paragraph--small::before{
+    font-family: icomoon;
+    content: "\e935";
+    font-size: 1.5rem;
+    text-indent: 0;
+    display: block;
+    position: absolute;
+    top: -3px;
+    left: -31px;
+    color: #7ecb34!important;
+    font-weight: 500;
+  }
 
 .container--header-bienvenido{
   font-family: Montserrat-SemiBold;
@@ -208,17 +208,17 @@
   margin: 0 0 0 auto;
 }
 
-.paragraph--header-bienvenido{
-  color: #fff;
-  margin-top: 0;
-  height: 36px;
-  margin-bottom: 10px;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: .875rem;
-}
+  .paragraph--header-bienvenido{
+    color: #fff;
+    margin-top: 0;
+    height: 36px;
+    margin-bottom: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: .875rem;
+  }
 
 .container--wishlist-rich {
   color: #010101;
@@ -245,5 +245,4 @@
   .container--title .paragraph {
     line-height: 1.3em;
   }
-
 }

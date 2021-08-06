@@ -3,14 +3,14 @@
     "children": [
       "tag-quantity#summary",
       "stack-layout#prodsum",
-      "flex-layout.col#productRating",
+      //"flex-layout.col#productRating",
       "product-summary-space",
       "product-list-price#summary",
       "flex-layout.row#selling-price-savings",
       //"product-installments#summary",
       "expiration-pum-app#pum",
-      "product-summary-name",
-      "expiration-pum-app#expiration",
+      "product-summary-name#summary",
+      "flex-layout.row#expiration",
       "responsive-layout.desktop#bu",
       "responsive-layout.mobile#bu",
       "product-specification-badges"
@@ -33,7 +33,7 @@
   "stack-layout#prodsum": {
     "children": [
       "product-summary-image#shelf",
-      "vtex.product-highlights@2.x:product-highlights#collection",
+      //"vtex.product-highlights@2.x:product-highlights#collection",
       "modal-trigger#quickview" // Check quickview.jsonc
     ]
   },
@@ -41,7 +41,8 @@
     "props": {
       "showBadge": false,
       "aspectRatio": "1:1",
-      "maxHeight": 200
+      "maxHeight": 200,
+      "blockClass": "image-shelf"
     }
   },
   "vtex.product-highlights@2.x:product-highlights#collection": {
@@ -64,7 +65,7 @@
 
   "product-list-price#summary": {
     "props": {
-      "blockClass": "summary"
+      "blockClass": "list-price-summary"
     }
   },
   "flex-layout.row#selling-price-savings": {
@@ -72,7 +73,6 @@
       "colGap": 4,
       "preserveLayoutOnMobile": true,
       "preventHorizontalStretch": true,
-      "marginBottom": 4,
       "blockClass": "savingss"
     },
     "children": [
@@ -91,6 +91,17 @@
       "blockClass": "pum-summary"
    }
   },
+  "product-summary-name#summary":{
+    "props":{
+      "blockClass": "name-summary"
+    }
+  },
+  "flex-layout.row#expiration":{
+    "children":["expiration-pum-app#expiration"],
+    "props":{
+      "blockClass": "expiration-summary-flex"
+    }
+  },
   "expiration-pum-app#expiration": {
     "props": {
       "date": "Fecha de vencimiento",
@@ -106,8 +117,7 @@
       "flex-layout.col#buy-button"
     ],
     "props":{
-      "blockClass":"desktop-but",
-      "colGap": 3
+      "blockClass":"desktop-but"
     }
   },
   "flex-layout.col#quantity":{
@@ -130,10 +140,10 @@
   },
   "add-to-cart-button#buyButton":{
     "props":{
-      "text":"Comprar"
+      "text":"Comprar",
+      "blockClass": "button-summary"
     }
   },
-
   "responsive-layout.mobile#bu":{
     "children":["flex-layout.row#button-mobile"]
   },
@@ -154,7 +164,7 @@
   },
   "add-to-cart-button#mobile":{
     "props":{
-      "text":"Comprar"
+      "blockClass": "addButton-mobile"
     }
   },
   "product-selling-price#summary": {

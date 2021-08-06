@@ -75,7 +75,7 @@
         },
         "hover-background": {
           "action-primary": "#475BE0",
-          "action-secondary": "#61C800",
+          "action-secondary": "",
           "emphasis": "#61C800",
           "success": "#7ECB34",
           "success--faded": "#7ECB34",

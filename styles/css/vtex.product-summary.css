@@ -16,21 +16,18 @@
     display: none;
   }
 }
-
+/*
 .nameContainer {
   justify-content: start;
   padding-top: 1rem;
   padding-bottom: 1rem;
-}
-
-.brandName {
-  font-size: .75rem;
-  color: #82878a;
-  font-family: "Montserrat-Regular";
-}
+}*/
 
 .container {
-  text-align: start;
+  padding: 25px;
+    border-radius: 5px;
+    margin-top: 0;
+    background-color: #fff;
 }
 
 .imageContainer {
@@ -42,10 +39,8 @@
 }
 
 .imageNormal {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  max-height: 200px;
+  max-width: 220px;
+  max-height: none!important;
 }
 
 .element--home {
@@ -60,23 +55,57 @@
   padding: 40px 0px;
 }
 
-.clearLink-home {
-  border-radius: 5px;
-  background-color: #fff;
-  margin-left: 10px;
-  margin-right: 10px;
+  .clearLink-home {
+    border-radius: 5px;
+    background-color: #fff;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+/*product-sumary*/
+
+.nameContainer--name-summary {
+  justify-content: flex-start;
+  padding: 0;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
+
+.productNameContainer--name-summary {
+    padding: 0;
+    max-height: 27px;
+    height: 27px;
+    font-weight: 500;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    justify-content: flex-start;
+    text-align: initial;
+    font-family: Montserrat-Blod;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.brandName--name-summary {
+  font-size: .75rem;
+  font-weight: 900;
+  color: #82878a;
+}
+
+/*end product-sumary*/
+
+/*Wishlist*/
 
 .container--wishlist {
   max-width: 100% !important;
 }
 
-.element--wishlist {
-  padding-bottom: 20px;
-  padding-top: 0;
-  padding-left: 10px;
-  padding-right: 10px;
-}
+  .element--wishlist {
+    padding-bottom: 20px;
+    padding-top: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 
 .imageContainer--image-wishlist {
   max-width: 100px;
@@ -92,13 +121,14 @@
   min-height: 75px;
 }
 
-.brandName--name-wishlist {
-  font-size: 16px;
-  color: #010101;
-  text-transform: capitalize;
-}
+  .brandName--name-wishlist {
+    font-size: 16px;
+    color: #010101;
+    text-transform: capitalize;
+  }
 
-.brandName--name-wishlist:hover {
-  text-decoration: underline #010101;
-}
+  .brandName--name-wishlist:hover {
+    text-decoration: underline #010101;
+  }
 
+  /*end Wishlist*/

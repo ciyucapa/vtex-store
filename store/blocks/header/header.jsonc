@@ -95,9 +95,9 @@
     "children":["flex-layout.col#col-mini-1"]
   },
   "flex-layout.row#mini-2": {
-    "children":["flex-layout.col#mini-new", "flex-layout.col#mini-new-1"],
+    "children":["flex-layout.col#login", "flex-layout.col#minicart"],
     "props":{
-      "blockClass":"row-iconos",
+      "blockClass":"login-minicart",
       "horizontalAlign":"center"
     }
   },
@@ -110,23 +110,33 @@
       "blockClass": "header-bienvenido"
     }
   },
-  "flex-layout.col#mini-new":{
-    "children":["login"],
+  "flex-layout.col#login":{
+    "children":["login#header"],
     "props":{
-      "blockClass": "row-iconos-one"
+      "blockClass": "login"
     }
   },
-  "flex-layout.col#mini-new-1":{
+  "flex-layout.col#minicart":{
     "children":["minicart.v2#"],
     "props":{
       "blockClass": "row-iconos-two"
     }
   },
+  "login#header": {
+    "props": {
+      "showPasswordVerificationIntoTooltip": true,
+      "showIconProfile": true,
+      "hideIconLabel": true,
+      "blockClass": "login-header"
+    }
+  },
   "minicart.v2#": {
     "props": {
       "variation": "popup",
-      "drawerSlideDirection": "rightToLeft",
-      "itemCountMode": "total"
+      "openOnHover": "true",
+      "quantityDisplay": "always",
+      "itemCountMode": "total",
+      "blockClass": "minicart-header"
     }
   },
   /*
@@ -202,17 +212,31 @@
   },
   "flex-layout.row#1-mobile": {
     "children": [
-      "logo#mobile",
-       "search-bar#header-mobile",
-      "drawer",
-      "minicart.v2"
+      "flex-layout.col#logo-mobile",
+      "flex-layout.col#search-mobile",
+      "flex-layout.col#drawer-mobile"
     ],
     "props": {
       "blockClass": "main-header-mobile",
-      "preventHorizontalStretch": true,
-      "preserveLayoutOnMobile": true,
-      "fullWidth": true
+      "fullWidth": true,
+      "preventLayoutOnMoble": true
     }
+  },
+  "flex-layout.col#logo-mobile": {
+    "children":["logo#mobile"],
+    "props":{
+      "paddingLeft": 3,
+      "blockClass": "logo-mobile"
+    }
+  },
+  "flex-layout.col#search-mobile": {
+    "children":["search-bar#header-mobile"]
+  },
+  "flex-layout.col#drawer-mobile": {
+    "children":["flex-layout.row#drawer-mobile"]
+  },
+  "flex-layout.row#drawer-mobile": {
+    "children":["drawer", "minicart.v2"]
   },
   "drawer": {
     "children": ["menu#drawer"]
@@ -228,7 +252,6 @@
       "orientation": "vertical"
     }
   },
-
   "logo#mobile": {
     "props": {
       "title": "Logo",
