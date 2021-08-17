@@ -32,3 +32,60 @@
 .gallery {
   padding: 0;
 }
+
+/*STAR /TODOS */
+
+.filterTitle--filter-desktop {
+  font-size: 14px;
+    color: #475be0;
+    font-weight: 700;
+    display: flex;
+    justify-content: space-between;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: .75rem;
+    width: 100%;
+    box-sizing: border-box;
+    cursor: pointer;
+    font-family: Montserrat-Bold;
+    outline: none;
+}
+
+.filterItem--filter-desktop :global(.vtex-checkbox__label) {
+  color: #82878a !important;
+  font-weight: 600;
+  margin-left: 5px;
+  font-size: 12px;
+}
+
+.filterMessage--filter-desktop {
+  display: none;
+}
+
+.filter__container--title, .filterAvailable--filter-desktop {
+  padding: 0 !important;
+}
+
+.filter__container--filter-desktop {
+  border-bottom: 1px solid #475be0;
+  padding: 10px 0;
+}
+
+.filterSelected--filter-desktop {
+  padding: 0 !important;
+}
+
+.filter__container :global(.vtex-slider-container) {
+  padding: 0 .95rem;
+}
+
+.filter__container :global(.vtex-slider__values-container) {
+  margin-bottom: 5px;
+  color: #82878a;
+}
+
+.filter__container :global(.vtex-slider__base-internal),  :global(.vtex-slider__selector) {
+  background-color: #475be0
+}
+
+/*END /TODOS */

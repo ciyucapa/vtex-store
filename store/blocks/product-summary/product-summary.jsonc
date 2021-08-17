@@ -5,10 +5,8 @@
       "stack-layout#prodsum",
       //"flex-layout.col#productRating",
       "product-summary-space",
-      "product-list-price#summary",
       "flex-layout.row#selling-price-savings",
       //"product-installments#summary",
-      "expiration-pum-app#pum",
       "product-summary-name#summary",
       "flex-layout.row#expiration",
       "responsive-layout.desktop#bu",
@@ -76,9 +74,22 @@
       "blockClass": "savingss"
     },
     "children": [
-      "product-selling-price#summary",
-      "product-price-savings#summary"
+      "flex-layout.col#price-summary", 
+      "flex-layout.col#burbuja-summary"
     ]
+  },
+  "flex-layout.col#price-summary": {
+    "children":[
+      "product-list-price#summary",
+      "product-selling-price#summary",
+      "expiration-pum-app#pum"
+    ],
+    "props":{
+      "blockClass": "price-summary"
+    }
+  },
+  "flex-layout.col#burbuja-summary": {
+    "children":["product-price-savings#summary"]
   },
   "product-installments#summary": {
     "props": {

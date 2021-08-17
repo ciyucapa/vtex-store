@@ -295,6 +295,10 @@
   min-height: 15px;
 }
 
+.flexColChild--price-summary {
+  text-align: left;
+}
+
 /*end product summary*/
 
 
@@ -335,3 +339,24 @@
 }
 
 /*end wishlist*/
+
+/*STAR /TODOS */
+.flexRow--wrapperGeneralPanel {
+  margin-top: 30px;
+  margin-bottom: 100px;
+}
+
+.flexRowContent--wrapperGeneralPanel {
+  justify-content: space-around;
+}
+
+.flexRow--titleCategory {
+  border-bottom: 1.7px solid #475be0;
+    color: #475be0;
+    text-align: center;
+    font-weight: 500;
+    height: auto;
+    padding-bottom: 3px;
+}
+
+/*END /TODOS */
