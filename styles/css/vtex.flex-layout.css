@@ -359,4 +359,42 @@
     padding-bottom: 3px;
 }
 
+.flexRowContent--wrapperSearchInfo {
+  justify-content: space-between;
+}
+
+.flexRowContent--wrapperSearchInfo :global(.vtex-flex-layout-0-x-stretchChildrenWidth) {
+  width: fit-content !important;
+}
+
+.flexCol--order-todos {
+  background-color: #fff;
+}
+
+  .flexColChild--order-todos{
+    cursor: pointer;
+    font-size: 1.1em;
+    color: #475be0;
+    font-weight: 600;
+    text-align: center;
+  }
+
+.flexCol--total-todos {
+  font-weight: 600;
+    color: #82878a;
+    font-size: .9em;
+    letter-spacing: .03em;
+}
+
+.flexColChild--wrapperLeftPanel {
+  height: auto!important;
+}
+
+@media only screen and (max-width: 1024px) {
+  .flexRowContent--todos-mobile {
+    align-items: center;
+    justify-content: space-around;
+  }
+}
+
 /*END /TODOS */

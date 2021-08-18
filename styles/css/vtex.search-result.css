@@ -88,4 +88,83 @@
   background-color: #475be0
 }
 
+.orderByDropdown--order-todos {
+  z-index: 10;
+}
+
+.orderByButton--order-todos {
+  border: none;
+    width: fit-content;
+}
+
+.filterPopupTitle--order-todos {
+  font-size: 0;
+}
+
+.orderByText--order-todos {
+  cursor: pointer;
+    font-size: .875rem;
+    color: #475be0;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    padding: 0;
+    font-family: Montserrat-Regular;
+}
+
+.filterPopupArrowIcon--order-todos {
+  padding: 0 10px;
+}
+
+.caretIcon--order-todos {
+  width: 16px;
+  height: 16px;
+}
+
+.orderByOptionsContainer {
+  margin-top: 45px;
+  min-width: auto;
+  border: none;
+  z-index: 50;
+  width: fit-content;
+  left: 0;
+  box-shadow: none;
+  width: 225px;
+  background-color: #f0f0f0;
+  padding: 10px 13px;
+  border-radius: 0;
+}
+
+.orderByOptionItem--order-todos {
+  background-color: #f0f0f0;
+    color: #82878a;
+    padding: 6px 15px;
+    border-radius: none;
+    font-family: Montserrat-Regular;
+    font-size: 12px;
+}
+
+.totalProducts--layout {
+  font-weight: 600;
+  color: #82878a;
+  font-size: 11px;
+  letter-spacing: .03em;
+  font-family: Montserrat-Regular;
+}
+
+.totalProductsMessage--total-todos {
+  color: #82878a;
+  font-family: Montserrat-Regular;  
+}
+
+.buttonShowMore {
+  margin-top: 35px;
+}
+
+.buttonShowMore :global(.vtex-button) {
+  border-radius: 25px !important;
+  font-family: Montserrat-Regular;
+  border: 1px solid;
+}
+
 /*END /TODOS */
