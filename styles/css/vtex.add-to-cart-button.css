@@ -6,23 +6,16 @@
     letter-spacing: 0;
 }
 
-.buttonDataContainer--addButton-mobile {
-    position: relative;
- }
-
- .buttonDataContainer--addButton-mobile::before {
-    font-family: icomoon;
-    content: "\e92d";
-    font-size: 1rem;
-    color: #475be0 !important; 
-    text-indent: 0;
-    display: block;
-    position: absolute;
- }
-
- .buttonText--addButton-mobile {
-     font-size: 0;
- }
+@media only screen and (max-width: 1024px) {
+    .buttonDataContainer::before {
+      font-family: icomoon;
+      content: "\e92d";
+      font-size: 1rem;
+      text-indent: 0;
+      display: block;
+      color: #475be0!important;
+    }
+  }
 
 /*end product-summary*/
 

@@ -1,48 +1,43 @@
-.quantitySelectorContainer {
-    margin: 0;
-    padding: 0;
-    align-items: center;
-  }
+.summaryContainer {
+  margin-right: auto;
+    margin-left: 0;
+    position: relative;
+}
 
-.quantitySelectorStepper :global(.vtex-numeric-stepper__minus-button),
-.quantitySelectorStepper :global(.vtex-numeric-stepper__plus-button) {
+.summaryContainer :global(.vtex-numeric-stepper-wrapper) {
+  border: 1px solid #475be0;
+    border-radius: 25px;
+}
+
+:global(.vtex-numeric-stepper__input),
+:global(.vtex-numeric-stepper__minus-button),
+:global(.vtex-numeric-stepper__minus-button-container),
+:global(.vtex-numeric-stepper__plus-button-container),
+:global(.vtex-numeric-stepper__plus-button) {
+  background: transparent;
+  height: 45px;
   border: none;
-  background-color: #fff;
-  border-radius: 50px;
-  outline: none;
+  outline: none!important;
 }
 
-
-.quantitySelectorStepper :global(.vtex-numeric-stepper__minus-button),
-.quantitySelectorStepper :global(.vtex-numeric-stepper__plus-button) {
-  border-top: 1px solid #475be0;
-  border-bottom: 1px solid #475be0;
+:global(.vtex-numeric-stepper__input),
+:global(.vtex-numeric-stepper__minus-button),
+:global(.vtex-numeric-stepper__minus-button-container),
+:global(.vtex-numeric-stepper__plus-button),
+:global(.vtex-numeric-stepper__plus-button-container) {
+  width: 30%;
+  text-align: center;
+  color: #475be0!important;
+  display: flex;
 }
 
-.quantitySelectorStepper :global(.vtex-numeric-stepper__minus-button) {
-  border-left: 1px solid #475be0;
+:global(.vtex-numeric-stepper__minus-button__text),
+:global(.vtex-numeric-stepper__plus-button__text) {
+  line-height: 1;
+  margin-bottom: 3px;
 }
 
-.quantitySelectorStepper :global(.vtex-numeric-stepper__plus-button) {
-  border-right: 1px solid #475be0;
+:global(.vtex-numeric-stepper__minus-button__text) {
+  position: relative;
+  left: 7px;
 }
-
-.quantitySelectorStepper :global(.vtex-numeric-stepper__plus-button__text) {
-  font-size:17px;
-}
-
-.quantitySelectorStepper :global(.vtex-numeric-stepper__minus-button__text) {
-  font-size: 20px;
-}
-
-.quantitySelectorStepper :global(.vtex-numeric-stepper__input) {
-  width: 20px;
-  border: none;
-}
-
-.quantitySelectorStepper :global(.vtex-numeric-stepper__input) {
-  border-top: 1px solid #475be0;
-  border-bottom: 1px solid #475be0;
-  color: #475be0;
-}
-

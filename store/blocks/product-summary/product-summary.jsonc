@@ -170,7 +170,7 @@
   "flex-layout.col#mobile":{
     "children":["add-to-cart-button#mobile"],
     "props": {
-      "blockClass": "cart-mobile"
+      "blockClass": "mobile"
     }
   },
   "add-to-cart-button#mobile":{

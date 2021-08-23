@@ -192,7 +192,7 @@
 
 /*end product*/
 
-.flexCol--cart-mobile :global(.vtex-button) {
+/*.flexCol--cart-mobile :global(.vtex-button) {
   background-color: white;
   border: 1px solid #475be0;
   border-radius: 50px;
@@ -203,7 +203,7 @@
   .flexCol--cart-mobile :global(.vtex-button):hover {
     background-color: #475be9;
     color: #fff;
-  }
+  }*/
 
 .flexRow--cajass {
   background-color: #9eacf0;
@@ -285,11 +285,11 @@
  
 /*product summary*/
 
-.flexRow--desktop-but {
+/*.flexRow--desktop-but {
   margin-top: 5px;
   display: flex;
   justify-content: space-between;
-}
+}*/
 
 .flexRow--expiration-summary-flex {
   min-height: 15px;
@@ -394,6 +394,17 @@
   .flexRowContent--todos-mobile {
     align-items: center;
     justify-content: space-around;
+  }
+}
+
+.flexRow--productCountMobileRow :global(.vtex-search-result-3-x-totalProducts--layout) {
+  padding-bottom: 0;
+}
+
+@media only screen and (max-width: 1024px) {
+  .flexRowContent--but-mobile :global(.vtex-flex-layout-0-x-stretchChildrenWidth), 
+  :global(.vtex-button) {
+    padding: 0 10px;
   }
 }
 

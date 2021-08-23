@@ -54,24 +54,54 @@
 
   "search-result-layout": {
     "blocks": [
-      "search-result-layout.desktop",
+      "search-result-layout.desktop#todos",
       "search-result-layout.mobile",
       "search-not-found-layout"
     ]
   },
 
-  "search-result-layout.desktop": {
+  "search-result-layout.desktop#todos": {
     "children": [
-      "flex-layout.row#searchbread",
-      "flex-layout.row#searchtitle",
-      "flex-layout.row#result"
+        "flex-layout.row#searchbread",
+        "flex-layout.row#todos-desktops"
     ],
     "props": {
       "pagination": "show-more",
       "preventRouteChange": false,
-      "defaultGalleryLayout": "grid"
+      "mobileLayout": {
+        "mode1": "small",
+        "mode2": "normal"
+      },
+      "showFacetQuantity": true,
+        "hiddenFacets": {
+            "brands": false,
+            "categories": true,
+            "priceRange": false,
+            "department": true,
+            "specificationFilters": {
+                "hideAll": false,
+                "hiddenFilters": [
+                    {"name": "CINCO"},
+                    {"name": "Color"},
+                    {"name": "Categoría 4"},
+                    {"name": "Departamento"},
+                    {"name": "Fabricación"},
+                    {"name": "Fecha de vencimiento"},
+                    {"name": "ENCAJAR"},
+                    {"name": "OPORTUNIDAD"},
+                    {"name": "PATRÓN"},
+                    {"name": "MANGA"},
+                    {"name": "Subcategoría"},
+                    {"name": "Talla"},
+                    {"name": "Tipo"},
+                    {"name": "TIPO"},
+                    {"name": "Últimas unidades"}
+                ]
+            }
+
+        }
     }
-  },
+},
   "flex-layout.row#searchbread": {
     "children": ["breadcrumb.search"],
     "props": {
@@ -79,89 +109,150 @@
       "fullWidth": true
     }
   },
-  "flex-layout.row#searchtitle": {
-    "children": ["search-title.v2"]
-  },
-  "flex-layout.row#result": {
-    "children": ["flex-layout.col#filter", "flex-layout.col#content"],
-    "props": {
-      "preventHorizontalStretch": true,
-      "fullWidth": true
+
+  "flex-layout.row#todos-desktops": {
+    "children":[
+        "flex-layout.col#filter-desktop",
+        "flex-layout.col#todos-new"
+    ],
+    "props":{
+        "blockClass": "wrapperGeneralPanel"
     }
   },
-  "flex-layout.col#filter": {
-    "children": ["filter-navigator.v3"],
-    "props": {
-      "blockClass": "filterCol"
-    }
-  },
-  "flex-layout.col#content": {
+  "flex-layout.col#filter-desktop": { 
     "children": [
-      "flex-layout.row#searchinfo",
-      "flex-layout.row#fetchprevious",
-      "flex-layout.row#products",
-      "flex-layout.row#fetchmore"
+        "flex-layout.row#titleCategory",
+        "flex-layout.col#filterCol"
     ],
     "props": {
-      "width": "grow",
-      "preventVerticalStretch": true
+        "width": "18%",
+        "blockClass": "wrapperLeftPanel"
+      }
+  },
+  "flex-layout.col#todos-new": { 
+    "children": [ "flex-layout.col#newcol"],
+    "props": {
+        "width": "70%",
+        "blockClass": "wrapperRightPanel"
+      }
+  },
+  "flex-layout.row#titleCategory": { 
+    "props":{
+        "blockClass": "titleCategory"
     }
   },
-  "flex-layout.row#searchinfo": {
-    "children": ["flex-layout.col#productCount", "flex-layout.row#orderByAndSwitcher"]
-  },
-  "flex-layout.row#orderByAndSwitcher": {
-    "children": ["order-by.v2", "gallery-layout-switcher"],
-    "props": {
-      "horizontalAlign": "right",
-      "preventHorizontalStretch": true,
-      "blockClass": "orderByAndSwitcher",
-      "colGap": 3
-    }
-  },
-  "flex-layout.col#productCount": {
-    "children": ["total-products.v2"],
-    "props": {
-      "blockClass": "productCountCol"
-    }
-  },
-  "flex-layout.row#fetchprevious": {
-    "props": {
-      "marginBottom": 3
+  "flex-layout.col#filterCol": { 
+    "props":{
+        "blockClass": "filterCol"
     },
-    "children": ["search-fetch-previous"]
+    "children":[ "filter-navigator.v3"]
   },
-  "flex-layout.row#fetchmore": {
-    "props": {
-      "marginTop": 3
+  "filter-navigator.v3":{
+      "props":{
+          "blockClass": "filter-desktop",
+          "initiallyCollapsed": false,
+          "totalProductsOnMobile": true,
+          "showFacetQuantity": false,
+          "appliedFiltersOverview": "hide"
+      }
+  },
+  "flex-layout.col#newcol": { 
+    "props":{
+        "blockClass": "box-panelright"
     },
-    "children": ["search-fetch-more"]
+    "children":[
+        "flex-layout.row#order-todos-desktop",
+        "flex-layout.row#fetchPrevious",
+        "flex-layout.row#gallery",
+        "flex-layout.row#fetchMore"
+    ]
+  },
+  "flex-layout.row#order-todos-desktop":{
+    "children":[
+        "flex-layout.col#order-col", 
+        "flex-layout.col#totalProduct-col" 
+    ],
+    "props":{
+        "blockClass": "wrapperSearchInfo"
+    }
+  },
+  "flex-layout.row#fetchPrevious":{
+    "children":["search-fetch-previous"],
+    "props":{
+        "blockClass": "fetchPrevious"
+    }
+  },
+  "flex-layout.row#gallery":{
+    "children":["search-content#todos"],
+    "props":{
+        "blockClass": "gallery"
+    }
+  },
+  "flex-layout.row#fetchMore":{
+    "children":["search-fetch-more"],
+    "props":{
+        "blockClass": "fetchMore"
+    }
+  },
+  "flex-layout.col#order-col":{
+    "children":["order-by.v2#todos"],
+    "props":{
+        "blockClass": "order-todos"
+    }
+  },
+  "flex-layout.col#totalProduct-col":{
+    "children":["total-products.v2#todos"],
+    "props":{
+        "blockClass": "total-todos"
+    }
+  },
+  "search-content#todos": { 
+    "blocks": ["gallery#todos", "not-found"]
+  },
+  "search-fetch-more": {
+    "props":{
+        "htmlElementForButton": "button"
+    }
+  },
+  "order-by.v2#todos":{
+    "props":{
+        "blockClass":"order-todos"
+    }
+  },
+  "total-products.v2#todos":{
+    "props":{
+        "blockClass":"total-todos"
+    }
+  },
+  "gallery#todos": {
+    "blocks": ["product-summary.shelf"],
+    "props":{
+        "layouts": [
+            {
+                "name": "whole",
+                "component": "OneOrTwoLineSummary",
+                "itemsPerRow" :{
+                    "desktop": 4,
+                    "mobile": 2
+                }
+            }
+        ],
+        "OneOrTwoLineSummary": "product-summary.shelf",
+        "blockClass": "gallery-todos"
+    }
   },
   "search-fetch-previous": {
     "props": {
       "htmlElementForButton": "a"
     }
   },
-  "search-fetch-more": {
-    "props": {
-      "htmlElementForButton": "a"
-    }
-  },
-  "flex-layout.row#products": {
-    "children": ["search-content"]
-  },
-  "search-content": {
-    "blocks": ["gallery", "not-found"]
-  },
 
   "search-result-layout.mobile": {
     "children": [
       "flex-layout.row#searchinfomobile",
-      "flex-layout.row#searchbread",
       "flex-layout.row#productCountMobile",
-      "flex-layout.row#fetchprevious",
       "flex-layout.row#contentmobile",
-      "flex-layout.row#fetchmore"
+      "flex-layout.row#fetchMore"
     ],
     "props": {
       "pagination": "show-more",
@@ -169,11 +260,37 @@
         "mode1": "small",
         "mode2": "normal"
       },
-      "defaultGalleryLayout": "grid"
+      "defaultGalleryLayout": "grid",
+      "hiddenFacets":{
+        "priceRange":false,
+        "brands":false,
+        "categories":true,
+        "department":true,
+        "specificationFilters":{
+          "hideAll":false,
+          "hiddenFilters":[
+            {"name": "CINCO"},
+            {"name": "Color"},
+            {"name": "Categoría 4"},
+            {"name": "Departamento"},
+            {"name": "Fabricación"},
+            {"name": "Fecha de vencimiento"},
+            {"name": "ENCAJAR"},
+            {"name": "OPORTUNIDAD"},
+            {"name": "PATRÓN"},
+            {"name": "MANGA"},
+            {"name": "Subcategoría"},
+            {"name": "Talla"},
+            {"name": "Tipo"},
+            {"name": "TIPO"},
+            {"name": "Últimas unidades"}
+          ]
+        }
+      }
     }
   },
   "flex-layout.row#contentmobile": {
-    "children": ["search-content"],
+    "children": ["search-content#todos"],
     "props": {
       "preserveLayoutOnMobile": true
     }
@@ -182,8 +299,8 @@
   "flex-layout.row#searchinfomobile": {
     "children": [
       "flex-layout.col#orderByMobile",
-      "flex-layout.col#filterMobile",
-      "flex-layout.col#switcherMobile"
+      "flex-layout.col#filterMobile"//,
+      //"flex-layout.col#switcherMobile"
     ],
     "props": {
       "preserveLayoutOnMobile": true,
@@ -200,9 +317,14 @@
   },
 
   "flex-layout.row#productCountMobile": {
-    "children": ["total-products.v2"],
+    "children": ["total-products.v2#mobile"],
     "props": {
       "blockClass": "productCountMobileRow"
+    }
+  },
+  "total-products.v2#mobile":{
+    "props":{
+      "blockClass":"totalMobile"
     }
   },
 
@@ -212,12 +334,12 @@
       "blockClass": "filterMobileCol"
     }
   },
-  "flex-layout.col#switcherMobile": {
+  /*"flex-layout.col#switcherMobile": {
     "children": ["gallery-layout-switcher"],
     "props": {
       "verticalAlign": "middle"
     }
-  },
+  },*/
   "search-not-found-layout": {
     "children": ["flex-layout.row#searchbread", "flex-layout.row#notfound"]
   },
@@ -233,9 +355,9 @@
     "props": {
       "showOnMobile": true
     }
-  },
+  }
 
-  "gallery": {
+  /*"gallery": {
     "props": {
       "layouts": [
         {
@@ -257,18 +379,18 @@
       "ListSummary": "product-summary.shelf#listLayout",
       "GridSummary": "product-summary.shelf"
     }
-  },
-  "gallery-layout-switcher": {
+  }*/
+  /*"gallery-layout-switcher": {
     "children": [
       /*
        * For accessbility to work properly,
        * It's important to define the options in the same order as the layouts
        */
-      "gallery-layout-option#grid",
+      /*"gallery-layout-option#grid",
       "gallery-layout-option#list"
     ]
-  },
-  "gallery-layout-option#grid": {
+  },*/
+  /*"gallery-layout-option#grid": {
     "props": {
       "name": "grid"
     },
@@ -276,8 +398,8 @@
       "icon-grid",
       "responsive-layout.desktop#textOptionGrid"
     ]
-  },
-  "gallery-layout-option#list": {
+  },*/
+  /*"gallery-layout-option#list": {
     "props": {
       "name": "list"
     },
@@ -285,18 +407,18 @@
       "icon-inline-grid",
       "responsive-layout.desktop#textOptionList"
     ]
-  },
-  "responsive-layout.desktop#textOptionGrid": {
+  },*/
+  /*"responsive-layout.desktop#textOptionGrid": {
     "children": [
       "rich-text#option-grid"
     ]
-  },
-  "responsive-layout.desktop#textOptionList": {
+  },*/
+  /*"responsive-layout.desktop#textOptionList": {
     "children": [
       "rich-text#option-list"
     ]
-  },
-  "rich-text#option-grid": {
+  },*/
+  /*"rich-text#option-grid": {
     "props": {
       "text": "Grid",
       "textColor": "c-auto",
@@ -309,5 +431,5 @@
       "textColor": "c-auto",
       "blockClass": "layout-option"
     }
-  }
+  }*/
 }

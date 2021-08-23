@@ -35,7 +35,7 @@
 
 /*STAR /TODOS */
 
-.filterTitle--filter-desktop {
+.filterTitle/*--filter-desktop*/ {
   font-size: 14px;
     color: #475be0;
     font-weight: 700;
@@ -51,27 +51,27 @@
     outline: none;
 }
 
-.filterItem--filter-desktop :global(.vtex-checkbox__label) {
+.filterItem/*--filter-desktop*/ :global(.vtex-checkbox__label) {
   color: #82878a !important;
   font-weight: 600;
   margin-left: 5px;
   font-size: 12px;
 }
 
-.filterMessage--filter-desktop {
+.filterMessage/*--filter-desktop*/ {
   display: none;
 }
 
-.filter__container--title, .filterAvailable--filter-desktop {
+.filter__container--title {
   padding: 0 !important;
 }
 
-.filter__container--filter-desktop {
+.filter__container/*--filter-desktop*/ {
   border-bottom: 1px solid #475be0;
   padding: 10px 0;
 }
 
-.filterSelected--filter-desktop {
+.filterSelected/*--filter-desktop */{
   padding: 0 !important;
 }
 
@@ -88,20 +88,25 @@
   background-color: #475be0
 }
 
-.orderByDropdown--order-todos {
+.filterContent :global(.vtex-checkbox__inner-container){
+  border-radius: .75rem;
+  border-width: 1px;
+}
+
+.orderByDropdown/*--order-todos */{
   z-index: 10;
 }
 
-.orderByButton--order-todos {
+.orderByButton/*--order-todos*/ {
   border: none;
     width: fit-content;
 }
 
-.filterPopupTitle--order-todos {
+.filterPopupTitle/*--order-todos*/ {
   font-size: 0;
 }
 
-.orderByText--order-todos {
+.orderByText/*--order-todos*/ {
   cursor: pointer;
     font-size: .875rem;
     color: #475be0;
@@ -112,11 +117,11 @@
     font-family: Montserrat-Regular;
 }
 
-.filterPopupArrowIcon--order-todos {
+.filterPopupArrowIcon/*--order-todos*/ {
   padding: 0 10px;
 }
 
-.caretIcon--order-todos {
+.caretIcon/*--order-todos*/ {
   width: 16px;
   height: 16px;
 }
@@ -135,7 +140,7 @@
   border-radius: 0;
 }
 
-.orderByOptionItem--order-todos {
+.orderByOptionItem/*--order-todos*/ {
   background-color: #f0f0f0;
     color: #82878a;
     padding: 6px 15px;
@@ -147,12 +152,12 @@
 .totalProducts--layout {
   font-weight: 600;
   color: #82878a;
-  font-size: 11px;
+  font-size: 12px;
   letter-spacing: .03em;
   font-family: Montserrat-Regular;
 }
 
-.totalProductsMessage--total-todos {
+.totalProductsMessage/*--total-todos*/ {
   color: #82878a;
   font-family: Montserrat-Regular;  
 }
@@ -165,6 +170,36 @@
   border-radius: 25px !important;
   font-family: Montserrat-Regular;
   border: 1px solid;
+}
+
+.filterPopupButton :global(.vtex-search-result-3-x-filterPopupTitle) {
+  font-size: .875rem;
+    color: #475be0;
+    font-weight: 600;
+    font-family: Montserrat-Regular;
+}
+
+.filterPopupButton :global(.vtex-search-result-3-x-filterPopupArrowIcon) {
+  background-size: 13px;
+  color: #000;
+  background-repeat: no-repeat;
+  width: 20px;
+  height: 20px;
+  background-position: 50%;
+  font-size: .875rem;
+  color: #475be0;
+  font-weight: 600;
+  margin-left: 8px;
+  padding: 0;
+  background-image: url(https://sugoco.vtexassets.com/arquivos/filter-results-button.svg);
+}
+
+.filterPopupButton :global(.vtex-search-result-3-x-filterIcon) {
+  display: none;
+}
+
+.galleryItem--gallery-todos {
+  padding-top: 0;
 }
 
 /*END /TODOS */
